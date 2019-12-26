@@ -11,7 +11,7 @@ const Draft = () => (
       color: 'background',
       bg: 'accent',
     }}>
-    ⚠️ You are viewing an draft post, and this may not be ready for primetime.
+    <span role='img' aria-label="warning">⚠️</span> You are viewing an draft post, and this may not be ready for primetime.
   </div>
 )
 

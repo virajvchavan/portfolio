@@ -84,3 +84,19 @@ export const List = props =>
     }}>
     {props.children}
   </div>
+
+export const Skill = props =>
+  <span
+    sx={{
+      color: 'background',
+      backgroundColor: 'text',
+      padding: '3px',
+      margin: '0 6px 6px 0',
+      borderRadius: '2px',
+      fontSize: '15px',
+      width: 'fit-content',
+      display: 'inline-block',
+      ...props.sx
+    }}>
+      {props.children}
+  </span>
