@@ -4,7 +4,8 @@ import { Link } from 'gatsby'
 import { Global } from '@emotion/core'
 import {
   FaTwitter as Twitter,
-  FaGithub as GitHub
+  FaGithub as GitHub,
+  FaLinkedin as Linkedin
 } from 'react-icons/fa'
 
 const modes = [
@@ -151,19 +152,32 @@ export default props => {
           <a
             href='https://twitter.com/virajVChavan'
             title='Twitter'
+            target='_blank'
             sx={{
               variant: 'styles.navitem',
-              mx: 3,
+              mx: 2,
             }}>
             <Twitter size={24} />
           </a>
           <a
             href='https://github.com/virajvchavan'
             title='GitHub'
+            target='_blank'
             sx={{
               variant: 'styles.navitem',
+              mx: 2
             }}>
             <GitHub size={24} />
+          </a>
+          <a
+            href='https://www.linkedin.com/in/virajvchavan/'
+            title='Linkedin'
+            target='_blank'
+            sx={{
+              variant: 'styles.navitem',
+              mx: 2
+            }}>
+            <Linkedin size={24} />
           </a>
         </div>
         <div

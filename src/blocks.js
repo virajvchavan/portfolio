@@ -9,6 +9,7 @@ export const Banner = props =>
       fontWeight: 'bold',
       h1: {
         fontSize: [5, 6, 7],
+        marginTop: '0px'
       },
       p: {
       },
@@ -92,7 +93,7 @@ export const Skill = props =>
       backgroundColor: 'text',
       padding: '3px',
       margin: '0 6px 6px 0',
-      borderRadius: '2px',
+      borderRadius: '4px',
       fontSize: '15px',
       width: 'fit-content',
       display: 'inline-block',
