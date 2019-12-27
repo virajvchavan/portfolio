@@ -153,6 +153,7 @@ export default props => {
             href='https://twitter.com/virajVChavan'
             title='Twitter'
             target='_blank'
+            rel="noopener noreferrer"
             sx={{
               variant: 'styles.navitem',
               mx: 2,
@@ -163,6 +164,7 @@ export default props => {
             href='https://github.com/virajvchavan'
             title='GitHub'
             target='_blank'
+            rel="noopener noreferrer"
             sx={{
               variant: 'styles.navitem',
               mx: 2
@@ -173,6 +175,7 @@ export default props => {
             href='https://www.linkedin.com/in/virajvchavan/'
             title='Linkedin'
             target='_blank'
+            rel="noopener noreferrer"
             sx={{
               variant: 'styles.navitem',
               mx: 2
