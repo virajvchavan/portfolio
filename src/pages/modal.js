@@ -9,6 +9,24 @@ class Modal extends React.Component {
     this.state = { showModal: false };
   }
 
+  _handleKeyDown = (event) => {
+    switch (event.keyCode) {
+      case 27:
+        this.closeModal();
+        break;
+      default:
+        break;
+    }
+  }
+
+  componentDidMount = () => {
+    document.addEventListener("keydown", this._handleKeyDown);
+  }
+
+  componentWillUnmount = () => {
+    document.removeEventListener("keydown", this._handleKeyDown);
+  }
+
   openModal = () => {
     this.setState({showModal: true});
   }
