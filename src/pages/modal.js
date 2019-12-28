@@ -1,8 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 import React from 'react'
-import {SimpleLink } from '../blocks'
-import { Link } from 'gatsby'
+import {SimpleLink, SocialLinks } from '../blocks'
 
 class Modal extends React.Component {
   constructor(props) {
@@ -39,6 +38,7 @@ class Modal extends React.Component {
         }} onClick={this.handleClick} className='modal-overlay'>
             <div sx={{
               padding: '20px',
+              paddingBottom: 0,
               backgroundColor: 'text',
               color: 'background',
               width: '85%',
@@ -57,9 +57,12 @@ class Modal extends React.Component {
                 cursor: 'pointer'
               }} onClick={this.closeModal}>close</span>
             Hi! <br /> <br />
-            I'm activly exploring new job opportunities as a full stack software developer. I would love to work in a remote-first company.<br/><br/>
-            I have used Ruby on Rails, JavaScript, React to build apps before. But I'll be quick and excited to learn new technologies. <br/><br/>
-            <a href='/resume.pdf' download="Viraj Chavan Resume" sx={{fontSize: '13px', textDecoration: 'underline !important'}} >Here's my resume</a>
+            I'm activly exploring new job opportunities as a <span sx={{ color: 'accent' }}>full stack/backend</span> software developer. I would love to work in a <span sx={{ color: 'accent' }}>remote-first</span> company.<br/><br/>
+            I have used <span sx={{ color: 'accent' }}>Ruby on Rails, JavaScript, React</span> to build apps before. But I'll be quick and excited to learn new technologies. <br/><br/>
+            <a href='/resume.pdf' download="Viraj Chavan Resume" sx={{fontSize: '13px', textDecoration: 'underline !important'}} >Here's my resume</a><br/><br/>
+            You can email me on <a href='mailto:virajc@live.com' target='_blank'>virajc@live.com</a>
+
+            <SocialLinks sx={{paddingBottom: 0}} />
             </div>
           </div>
         }
@@ -73,5 +76,3 @@ class Modal extends React.Component {
 }
 
 export default Modal;
-
-// pass openModal and closeModal to SimpleLink component somehow

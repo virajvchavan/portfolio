@@ -3,11 +3,7 @@ import { jsx, Styled, useColorMode } from 'theme-ui'
 import { Link } from 'gatsby'
 import { Global } from '@emotion/core'
 import "./layout.css"
-import {
-  FaTwitter as Twitter,
-  FaGithub as GitHub,
-  FaLinkedin as Linkedin
-} from 'react-icons/fa'
+import { SocialLinks } from './blocks'
 
 const modes = [
   'light',
@@ -144,46 +140,7 @@ export default props => {
           maxWidth: 'wide',
           mx: 'auto',
         }}>
-        <div
-          sx={{
-            py: 4,
-            display: 'flex',
-            justifyContent: 'center',
-          }}>
-          <a
-            href='https://twitter.com/virajVChavan'
-            title='Twitter'
-            target='_blank'
-            rel="noopener noreferrer"
-            sx={{
-              variant: 'styles.navitem',
-              mx: 2,
-            }}>
-            <Twitter size={24} />
-          </a>
-          <a
-            href='https://github.com/virajvchavan'
-            title='GitHub'
-            target='_blank'
-            rel="noopener noreferrer"
-            sx={{
-              variant: 'styles.navitem',
-              mx: 2
-            }}>
-            <GitHub size={24} />
-          </a>
-          <a
-            href='https://www.linkedin.com/in/virajvchavan/'
-            title='Linkedin'
-            target='_blank'
-            rel="noopener noreferrer"
-            sx={{
-              variant: 'styles.navitem',
-              mx: 2
-            }}>
-            <Linkedin size={24} />
-          </a>
-        </div>
+        <SocialLinks />
         <div
           sx={{
             display: 'flex',

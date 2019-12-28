@@ -1,6 +1,12 @@
 /** @jsx jsx */
 // these components are used in the mdx files
 import { jsx } from 'theme-ui'
+import {
+  FaTwitter as Twitter,
+  FaGithub as GitHub,
+  FaLinkedin as Linkedin
+} from 'react-icons/fa'
+
 
 export const Banner = props =>
   <div
@@ -115,3 +121,45 @@ export const SimpleLink = props =>
       onClick={props.onClick}>
       {props.children}
   </span >
+
+export const SocialLinks = props =>
+  <div
+    sx={{
+      py: 4,
+      display: 'flex',
+      justifyContent: 'center',
+    }}>
+    <a
+      href='https://twitter.com/virajVChavan'
+      title='Twitter'
+      target='_blank'
+      rel="noopener noreferrer"
+      sx={{
+        variant: 'styles.navitem',
+        mx: 2,
+      }}>
+      <Twitter size={24} />
+    </a>
+    <a
+      href='https://github.com/virajvchavan'
+      title='GitHub'
+      target='_blank'
+      rel="noopener noreferrer"
+      sx={{
+        variant: 'styles.navitem',
+        mx: 2
+      }}>
+      <GitHub size={24} />
+    </a>
+    <a
+      href='https://www.linkedin.com/in/virajvchavan/'
+      title='Linkedin'
+      target='_blank'
+      rel="noopener noreferrer"
+      sx={{
+        variant: 'styles.navitem',
+        mx: 2
+      }}>
+      <Linkedin size={24} />
+    </a>
+  </div>
