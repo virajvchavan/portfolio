@@ -2,6 +2,7 @@
 import { jsx, Styled, useColorMode } from 'theme-ui'
 import { Link } from 'gatsby'
 import { Global } from '@emotion/core'
+import "./layout.css"
 import {
   FaTwitter as Twitter,
   FaGithub as GitHub,

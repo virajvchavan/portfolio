@@ -101,3 +101,17 @@ export const Skill = props =>
     }}>
       {props.children}
   </span>
+
+export const SimpleLink = props =>
+  <span
+    sx={{
+      fontSize: '15px',
+      background: 'none',
+      color: '#008eff',
+      textDecoration: 'underline',
+      cursor: 'pointer',
+      ...props.sx
+      }}
+      onClick={props.onClick}>
+      {props.children}
+  </span >
