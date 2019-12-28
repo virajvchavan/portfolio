@@ -7,7 +7,7 @@ I was a student at an engineering college in India. After 3 and a half years yea
 
 In this article, I’ll be sharing my internship experience at <a href="http://joshsoftware.com/" target='_blank'>Josh Software</a>, Pune with the hope that it will be helpful to other IT and computer engineering students that are looking for internships.
 
-<iframe src="https://giphy.com/embed/MGdfeiKtEiEPS" width="480" height="330" frameBorder="0" class="giphy-embed"></iframe>
+<div style="width:100%;height:0;padding-bottom:69%;position:relative;"><iframe src="https://giphy.com/embed/MGdfeiKtEiEPS" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
 Like most of my colleagues at the college, I had a very limited view about software development in general and didn’t know what to expect from an internship.
 
@@ -87,7 +87,7 @@ The MVC Architecture
 
 Back in my college days, when I developed applications in PHP, I had no clue what Model, View, and Controller were. Any project was so complexly scrambled that I couldn’t find in which file a piece of important logic was written. The HTML embedded PHP scripts at odd places and I had placed all the files in just one folder.
 
-<iframe src="https://giphy.com/embed/8fjedJmOkkcTu" width="480" height="354" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div style="width:100%;height:0;padding-bottom:74%;position:relative;"><iframe src="https://giphy.com/embed/8fjedJmOkkcTu" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
 Then I learned about the Rails framework, and got accustomed with the MVC architecture.
 
@@ -139,7 +139,7 @@ In Ruby On Rails, I came across <a href="https://sidekiq.org/" target='_blank'>S
 Thanks for reading! If you found this article helpful, give me some claps. 👏
 
 There’s still a long way to go!
-<iframe src="https://giphy.com/embed/l3dj09hpsfuYkijDi" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/l3dj09hpsfuYkijDi" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
 Check out my Github profile <a href="https://github.com/virajvchavan" target='_blank'>here</a>.
 
