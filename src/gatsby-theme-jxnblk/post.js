@@ -54,7 +54,7 @@ export default ({
         py: 5,
         fontWeight: 'bold',
       }}>
-      <Styled.a href='https://twitter.com/virajVChavan'>
+      <Styled.a href='https://twitter.com/virajVChavan' target='_blank'>
         Follow me on Twitter
       </Styled.a>
       {' '}
