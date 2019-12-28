@@ -57,8 +57,8 @@ class Modal extends React.Component {
                 cursor: 'pointer'
               }} onClick={this.closeModal}>close</span>
             Hi! <br /> <br />
-            I'm activly exploring new job opportunities as a <span sx={{ color: 'accent' }}>full stack/backend</span> software developer. I would love to work in a <span sx={{ color: 'accent' }}>remote-first</span> company.<br/><br/>
-            I have used <span sx={{ color: 'accent' }}>Ruby on Rails, JavaScript, React</span> to build apps before. But I'll be quick and excited to learn new technologies. <br/><br/>
+            I'm activly exploring new job opportunities as a <span sx={{ color: 'highlight' }}>full stack/backend</span> software developer. I would love to work in a <span sx={{ color: 'highlight' }}>remote-first</span> company.<br/><br/>
+            I have used <span sx={{ color: 'highlight' }}>Ruby on Rails, JavaScript, React</span> to build apps before. But I'll be quick and excited to learn new technologies. <br/><br/>
             <a href='/resume.pdf' download="Viraj Chavan Resume" sx={{fontSize: '13px', textDecoration: 'underline !important'}} >Here's my resume</a><br/><br/>
             You can email me on <a href='mailto:virajc@live.com' target='_blank'>virajc@live.com</a>
 

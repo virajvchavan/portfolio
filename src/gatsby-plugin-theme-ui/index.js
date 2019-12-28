@@ -10,6 +10,8 @@ export default {
     accent: 'hsl(280, 100%, 57%)',
     muted: '#f9f9fc',
     gray: '#555',
+    link: '#008eff',
+    highlight: '#00BCD4',
     modes: {
       black: {
         text: '#fff',
@@ -19,6 +21,8 @@ export default {
         accent: '#f0f',
         muted: '#111',
         gray: '#888',
+        link: 'hsl(310, 100%, 57%)',
+        highlight: 'hsl(310, 100%, 57%)',
       },
       dark: {
         text: '#fff',
@@ -28,6 +32,7 @@ export default {
         accent: 'hsl(310, 100%, 57%)',
         muted: 'hsl(180, 5%, 5%)',
         gray: 'hsl(180, 0%, 70%)',
+        link: 'hsl(310, 100%, 57%)',
       },
       deep: {
         text: '#fff',

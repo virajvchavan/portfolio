@@ -113,7 +113,8 @@ export const SimpleLink = props =>
     sx={{
       fontSize: '15px',
       background: 'none',
-      color: '#008eff',
+      // color: '#008eff',
+      color: 'link',
       textDecoration: 'underline',
       cursor: 'pointer',
       ...props.sx
