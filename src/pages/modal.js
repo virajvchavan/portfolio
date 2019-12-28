@@ -2,6 +2,7 @@
 import { jsx } from 'theme-ui'
 import React from 'react'
 import {SimpleLink } from '../blocks'
+import { Link } from 'gatsby'
 
 class Modal extends React.Component {
   constructor(props) {
@@ -40,11 +41,13 @@ class Modal extends React.Component {
               padding: '20px',
               backgroundColor: 'text',
               color: 'background',
+              width: '85%',
               maxWidth: '630px',
               position: 'absolute',
               top: '40%',
               left: '50%',
               transform: 'translate(-50%, -50%)',
+              fontSize: '16px',
             }}>
               <span sx={{
                 fontSize: '10px',
@@ -53,7 +56,10 @@ class Modal extends React.Component {
                 right: '5px',
                 cursor: 'pointer'
               }} onClick={this.closeModal}>close</span>
-              This is the Modal. Hire me!
+            Hi! <br /> <br />
+            I'm activly exploring new job opportunities as a full stack software developer. I would love to work in a remote-first company.<br/><br/>
+            I have used Ruby on Rails, JavaScript, React to build apps before. But I'll be quick and excited to learn new technologies. <br/><br/>
+            <a href='/resume.pdf' download="Viraj Chavan Resume" sx={{fontSize: '13px', textDecoration: 'underline !important'}} >Here's my resume</a>
             </div>
           </div>
         }
