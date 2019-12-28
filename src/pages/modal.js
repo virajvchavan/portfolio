@@ -17,6 +17,12 @@ class Modal extends React.Component {
     this.setState({ showModal: false });
   }
 
+  handleClick = (event) => {
+    if (event.target.classList.contains('modal-overlay')) {
+      this.closeModal();
+    }
+  }
+
   render() {
     return (
       <div>
@@ -29,15 +35,14 @@ class Modal extends React.Component {
             height: '100%',
             backgroundColor: '#eaeaea20',
             zIndex: 1
-          }}>
+        }} onClick={this.handleClick} className='modal-overlay'>
             <div sx={{
-              margin: '15% auto',
               padding: '20px',
               backgroundColor: 'text',
               color: 'background',
               maxWidth: '630px',
               position: 'absolute',
-              top: '20%',
+              top: '40%',
               left: '50%',
               transform: 'translate(-50%, -50%)',
             }}>
