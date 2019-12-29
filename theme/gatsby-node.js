@@ -43,6 +43,9 @@ exports.sourceNodes = ({ actions, schema }) => {
           type: 'Date',
           extensions: { dateformat: {} }
         },
+        importance: {
+          type: 'Int'
+        },
         draft: {
           type: 'Boolean',
         },
@@ -97,12 +100,14 @@ exports.onCreateNode = ({
   const date = get(node, 'frontmatter.date')
   const draft = get(node, 'frontmatter.draft', false)
   const tags = get(node, 'frontmatter.tags', [])
+  const importance = get(node, 'frontmatter.importance', 0)
 
   actions.createNode({
     slug,
     title,
     date,
     draft,
+    importance,
     tags,
     id: createNodeId(`${node.id} >>> Post`),
     parent: node.id,
@@ -127,7 +132,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     {
       allPost(
         sort: {
-          fields: [date, title],
+          fields: [importance, date, title],
           order: DESC
         }
         limit: 1000
@@ -150,7 +155,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     {
       allPost(
         sort: {
-          fields: [date, title],
+          fields: [importance, date, title],
           order: DESC
         }
         filter: {

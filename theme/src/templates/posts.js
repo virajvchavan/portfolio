@@ -19,7 +19,7 @@ export const query = graphql`
   query ($skip: Int!, $limit: Int!) {
     posts: allPost(
       sort: {
-        fields: date,
+        fields: [importance, date],
         order: DESC
       }
       limit: $limit
