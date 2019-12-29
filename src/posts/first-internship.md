@@ -1,6 +1,6 @@
 ---
 title: 'What I learned from my first ever software development internship'
-date: 2019-07-25
+date: 2018-07-25
 ---
 
 I was a student at an engineering college in India. After 3 and a half years years of learning computer science academically, I now had a chance to test my knowledge in the real world through an internship.
@@ -8,6 +8,7 @@ I was a student at an engineering college in India. After 3 and a half years yea
 In this article, I’ll be sharing my internship experience at <a href="http://joshsoftware.com/" target='_blank'>Josh Software</a>, Pune with the hope that it will be helpful to other IT and computer engineering students that are looking for internships.
 
 <div style="width:100%;height:0;padding-bottom:69%;position:relative;"><iframe src="https://giphy.com/embed/MGdfeiKtEiEPS" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
 
 Like most of my colleagues at the college, I had a very limited view about software development in general and didn’t know what to expect from an internship.
 

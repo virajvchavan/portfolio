@@ -1,0 +1,102 @@
+---
+title: 'Search your website directly from Chrome’s Omnibox'
+date: 2019-08-07
+---
+
+You might have searched for YouTube videos directly from Chrome’s Omnibar.  
+You start typing `youtube.com` and the Omnibar shows a little message: `Press Tab to Search YouTube`
+
+<img src="/omni-search/omni1.png" role="presentation"/>
+
+And when you do press the `Tab` key, it lets you search YouTube directly, without needing to visit the site.
+
+Some websites also show you the search suggestions provided by them instead of the default search engine’s suggestions.
+
+<img src="/omni-search/omni2.png" role="presentation"/>
+
+Wikipedia providing its own search suggestions
+
+Ever wondered if you can implement the same for your own website? Turns out, it’s quite easy!
+
+Here’s how.
+
+1\. Create a search results page
+--------------------------------
+
+First, your website needs to have a page which can show search results for a query. (You already might have one).  <br/> For example,
+`http://yourwebsite.com/search?q={searchTerms}` <br/>
+How you handle search queries and show the results is completely up to you.
+
+2\. Define where your searches should be directed
+-------------------------------------------------
+
+To tell the browser that your website can accept search queries through the search bar, you just need to write a simple XML file.
+
+<img src="/omni-search/omni3.png" role="presentation"/>
+
+The most important part of the document is this tag:
+
+`<Url type="text/html" method="get" template="http://yourwebsite.com/search?q={searchTerms}" />`
+
+This is the URL the browser will redirect the search queries to. When the user presses enter in the Omnibox the string `{searchTerms}` in the url is replaced with the string the user typed.
+
+3\. Let the browsers know
+-------------------------
+
+On your site’s homepage, provide a link to the file you created. Place it in the head of the html file. For example:
+
+```
+<head>  
+ <link type="application/opensearchdescription+xml" rel="search"  
+       href="/url\_of\_xml\_file"/>  
+</head>
+```
+
+And that’s it!
+
+With this setup, your website is searchable through Chrome’s Omnibar.
+
+Do note that Chrome enables it for a website only after user visits the website for the first time. It also adds the website as a Search Engine Provider in its settings as an option.
+
+4\. Enable search suggestions
+-----------------------------
+
+To make things better, we can show some search suggestions as the user types the search query. Let’s implement that as well.
+
+First, create a suggestion service on your website which will accept a search query and return suggestions.  
+It should always return a JSON array of results, with the first result being the original search query.
+
+For example, if I hit the API `[https://yourwebsite.com/suggestions?q=g](https://yourwebsite.com/suggestions?q=cat,)it` , the response should be a valid JSON array like `['git', 'github', 'gitlab', 'git commands', 'github login']`
+
+Now add this tag to the XML document we created:  
+`<Url type="application/x-suggestions+json" method="get" rel="suggestions" template="http://yourwebsite.com/suggestions?q={searchTerms}" />`
+
+The omnibox will now use your suggestion service to provide query suggestions based on the user’s partial query.
+
+* * *
+
+The XML file we created is called an <a href="http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_description_document" target='_blank'>OpenSearch description document</a>. A specification for such functionality is created by <a href="https://github.com/dewitt/opensearch" target='_blank'>OpenSearch</a>. It has defined simple formats which the browsers can implement.
+
+So ideally this should work on all browsers! Although the way browsers implement this visually may be different. For example, <a href="https://support.mozilla.org/en-US/kb/add-or-remove-search-engine-firefox" target='_blank'>Firefox implements</a> it in a separate search bar next to its address bar.
+
+<img src="/omni-search/omni4.png" role="presentation"/>
+
+How Firefox implements OpenSearch
+
+The <a href="http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_description_document" target='_blank'>document</a> we created was the bare minimum needed for this example. For more details, see the <a href="https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md#opensearch-description-document" target='_blank'>detailed specification</a>.
+
+* * *
+
+References
+----------
+
+*   <a target='_blank' href="https://github.com/dewitt/opensearch">OpenSearch Documentation</a>
+*   <a target='_blank' href="https://developer.mozilla.org/en-US/docs/Web/OpenSearch">MDN OpenSearch Docs</a>
+*   <a target='_blank' href="https://www.chromium.org/tab-to-search">The Chromium Projects: Tab to Search</a>
+*   <a target='_blank' href="https://developer.apple.com/library/archive/releasenotes/General/WhatsNewInSafari/Articles/Safari_8_0.html">Safari 8.0 Release Notes: Quick Website Search</a>
+*   <a target='_blank' href="https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/browser-features/search-provider-discovery">Microsoft Edge Dev Guide: Search provider discovery</a>
+
+* * *
+
+Thanks for reading!  
+Find me on <a href="https://github.com/virajvchavan" target='_blank'>Github</a>/<a href="https://www.linkedin.com/in/virajvchavan/" target='_blank'>LinkedIn</a>.
