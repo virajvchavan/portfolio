@@ -27,6 +27,7 @@ export default ({
                 display: 'block',
                 color: 'inherit',
                 textDecoration: 'none',
+                fontSize: '30px'
               }}>
               {post.title || post.slug}
             </Link>

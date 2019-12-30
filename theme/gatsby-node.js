@@ -100,7 +100,7 @@ exports.onCreateNode = ({
   const date = get(node, 'frontmatter.date')
   const draft = get(node, 'frontmatter.draft', false)
   const tags = get(node, 'frontmatter.tags', [])
-  const importance = get(node, 'frontmatter.importance', 0)
+  const importance = get(node, 'frontmatter.importance', 5)
 
   actions.createNode({
     slug,
