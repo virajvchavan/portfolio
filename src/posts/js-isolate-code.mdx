@@ -1,0 +1,46 @@
+---
+title: 'JavaScript tip: How to properly isolate your code using Anonymous Closures (IIFEs)'
+date: 2019-12-30
+importance: 7
+---
+
+JavaScript code can get really messy when we keep adding random functionalities as the requirements come.
+
+And most of the times, any new functionality you add to an app should not interfere with the existing code in your app.
+
+You don’t want the new piece of code to override your existing variables/functions accidentally. When such code causes some unexpected behaviour, it can get really annoying to debug through multiple files.
+
+To achieve this, our new code should run in an isolated environment. In JavaScript, <a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36" target='_blank'>closures</a> can help us do that. Closures are the primary mechanism used to enable data privacy in JavaScript.
+
+This is how an anonymous closures looks like:
+
+```
+(function () {  
+	// ... all vars and functions are in this scope only.  
+	// still maintains access to all global variables  
+}());
+```
+
+Just put your code inside of this function, and it will have its own scope while keeping the global scope pollution-free.
+
+This is also known as a Self-Executing Anonymous Function or Immediately Invoked Function Expressions (IIFEs).
+
+Variables declared inside the closure are not accessible outside it, but it still can access/create global variables. (The use of global variables should ideally be <a href="https://stackoverflow.com/questions/2613310/ive-heard-global-variables-are-bad-what-alternative-solution-should-i-use" target='_blank'>avoided</a> though, they are known to be <a href="https://yuiblog.com/blog/2006/06/01/global-domination/" target='_blank'>evil</a>.)
+
+All of the code that runs inside this function lives in a **closure**, which provides **privacy** and **state** throughout the lifetime of our application.
+
+If we need to, we can expose variables/methods by returning them in the function.
+
+```
+var result = (function () {  
+    var name = "Harry";   
+    return name;   
+})();
+
+console.log(result); // "Harry"  
+console.log(name); // "error, 'name' not defined"
+```
+
+JavaScript Closures is the main idea behind the Module Pattern in JavaScript, you can explore the basics of module patter here: 
+<p><a target='_blank' href="http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html">http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html</a></p>
+<p><a target='_blank' href="https://dev.to/tomekbuszewski/module-pattern-in-javascript-56jm">https://dev.to/tomekbuszewski/module-pattern-in-javascript-56jm</a></p>
