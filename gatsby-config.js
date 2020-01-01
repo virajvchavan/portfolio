@@ -1,26 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: 'Viraj C | Software Engineer',
-    description: 'Viraj Chavan',
-    siteUrl: 'https://virajc.tech'
+    title: "Viraj C | Software Engineer",
+    description: "Viraj Chavan",
+    siteUrl: "https://virajc.tech"
   },
   plugins: [
-    'gatsby-plugin-catch-links',
-    'gatsby-theme-jxnblk',
+    "gatsby-plugin-catch-links",
+    "gatsby-theme-jxnblk",
     {
-      resolve: 'gatsby-plugin-google-fonts',
+      resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: [
-          'Roboto Mono'
-        ]
+        fonts: ["Roboto Mono"]
       }
     },
-    'gatsby-plugin-twitter',
+    "gatsby-plugin-twitter",
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: 'UA-155023343-1'
+        trackingId: "UA-155023343-1"
       }
     },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`
+      }
+    }
   ]
-}
+};
