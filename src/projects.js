@@ -1,5 +1,8 @@
+/** @jsx jsx */
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
+import { Project } from "./blocks.js";
+import { jsx } from "theme-ui";
 
 export default () => (
   <StaticQuery
@@ -8,7 +11,6 @@ export default () => (
         projects: allProjectsJson {
           edges {
             node {
-              id
               title
               url
               description
@@ -19,9 +21,16 @@ export default () => (
     `}
     render={data => {
       let projects = data.projects.edges.map(e => e.node);
-      return projects.map((item, key) => {
-        return <div key={item.title}>{item.title}</div>
-      });
+      return (
+        <div sx={{
+          display: 'flex',
+          flexFlow: 'wrap'
+        }}>
+          {projects.map((item, key) => {
+            return <Project data={item} key={item.title} />
+          })}
+        </div>
+      )
     }}
   />
 )

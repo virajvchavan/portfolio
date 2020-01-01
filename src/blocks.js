@@ -1,5 +1,5 @@
 /** @jsx jsx */
-// these components are used in the mdx files
+// dumb components with styles used in the mdx files
 import { jsx } from 'theme-ui'
 import {
   FaTwitter as Twitter,
@@ -164,3 +164,27 @@ export const SocialLinks = props =>
       <Linkedin size={24} />
     </a>
   </div>
+
+export const Project = props => (
+         <div
+           sx={{
+             display: "block",
+             borderRadius: "3px",
+             backgroundColor: "text",
+             color: "background",
+             padding: "15px",
+             margin: "8px",
+             width: [
+               "calc(100% - 16px)",
+               "calc(50% - 16px)",
+               "calc(33.3% - 16px)"
+             ],
+             minHeight: "144px",
+             fontWeight: "bold",
+             maxWidth: "340px",
+             ...props.sx
+           }}
+         >
+           <div>{props.data.title}</div>
+         </div>
+       );
