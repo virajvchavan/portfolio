@@ -171,7 +171,7 @@ export const Project = props => (
              display: "block",
              borderRadius: "3px",
              backgroundColor: "text",
-             color: "background",
+             color: "white",
              padding: "15px",
              margin: "8px",
              width: [
@@ -181,7 +181,8 @@ export const Project = props => (
              ],
              minHeight: "144px",
              fontWeight: "bold",
-             maxWidth: "340px",
+             minWidth: "340px",
+             background: "linear-gradient(to right top, rgb(114, 19, 251), rgb(79, 22, 238)) rgb(255, 255, 255);",
              ...props.sx
            }}
          >

@@ -24,7 +24,8 @@ export default () => (
       return (
         <div sx={{
           display: 'flex',
-          flexFlow: 'wrap'
+          flexFlow: 'wrap',
+          maxWidth: '1068px'
         }}>
           {projects.map((item, key) => {
             return <Project data={item} key={item.title} />
