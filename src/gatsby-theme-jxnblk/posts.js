@@ -10,7 +10,7 @@ export default ({
 }) =>
   <div
     sx={{
-      maxWidth: 'container',
+      maxWidth: '780px',
     }}>
     <ul
       sx={{
@@ -19,8 +19,8 @@ export default ({
         p: 0,
       }}>
       {posts.map(post => (
-        <li key={post.id}>
-          <Styled.h1 as='h2'>
+        <li key={post.id} sx={{ marginBottom: '3px'}}>
+          <Styled.h1 as='h2' sx={{marginBottom: '9px'}}>
             <Link
               to={post.slug}
               sx={{
@@ -36,7 +36,7 @@ export default ({
             </Link>
           </Styled.h1>
           <div sx={{ variant: 'type.small' }}>{post.date}</div>
-          <Styled.p sx={{marginBlockStart: '0.6em', fontSize: '17px'}}>
+          <Styled.p sx={{marginBlockStart: '0.6em', fontSize: '17px', lineHeight: '1.45'}}>
             {post.excerpt}
           </Styled.p>
         </li>
