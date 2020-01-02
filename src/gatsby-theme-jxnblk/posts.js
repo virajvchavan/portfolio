@@ -27,7 +27,7 @@ export default ({
                 display: 'block',
                 color: 'inherit',
                 textDecoration: 'none',
-                fontSize: '30px',
+                fontSize: '24px',
                 ":hover": {
                   color: 'primary'
                 }
@@ -36,7 +36,7 @@ export default ({
             </Link>
           </Styled.h1>
           <div sx={{ variant: 'type.small' }}>{post.date}</div>
-          <Styled.p sx={{marginBlockStart: '0.6em'}}>
+          <Styled.p sx={{marginBlockStart: '0.6em', fontSize: '17px'}}>
             {post.excerpt}
           </Styled.p>
         </li>

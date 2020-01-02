@@ -14,7 +14,7 @@ export const Banner = props =>
       py: [4, 5, 6],
       fontWeight: 'bold',
       h1: {
-        fontSize: [5, 6, 7],
+        fontSize: [6, 7],
         marginTop: '0px'
       },
       p: {
@@ -170,8 +170,11 @@ export const Project = props => (
            sx={{
              display: "block",
              borderRadius: "3px",
-             backgroundColor: "text",
-             color: "white",
+             color: "black",
+             backgroundColor: 'white',
+             borderColor: "text",
+            //  border: "solid 0.5px",
+             boxShadow: "rgba(0, 0, 0, 0.15) 0px 3px 8px 0px;",
              padding: "15px",
              margin: "8px",
              width: [
@@ -182,7 +185,11 @@ export const Project = props => (
              minHeight: "144px",
              fontWeight: "bold",
              minWidth: "340px",
-             background: "linear-gradient(to right top, rgb(114, 19, 251), rgb(79, 22, 238)) rgb(255, 255, 255);",
+             maxWidth: "450px",
+             ":hover": {
+               boxShadow: "rgba(0, 0, 0, 0.21) 0px 6px 16px 0px;",
+             },
+             cursor: 'pointer',
              ...props.sx
            }}
          >

@@ -10,8 +10,28 @@
         "description": ""
     },
     {
-        "title": "This website",
+        "title": "Frontend for Apps at Media.net",
+        "url": "",
+        "description": "Hey!"
+    },
+    {
+        "title": "Personal blog (This website)",
         "url": "https://virajc.tech",
         "description": "Hey!"
+    },
+    {
+        "title": "Game of Shares",
+        "url": "",
+        "description": ""
+    },
+    {
+        "title": "BookShare",
+        "url": "",
+        "description": ""
+    },
+    {
+        "title": "Days Until",
+        "url": "",
+        "description": ""
     }
 ]
