@@ -170,8 +170,8 @@ export const Project = props => (
            sx={{
              display: "block",
              borderRadius: "3px",
-             color: "white",
-             backgroundColor: '#494850',
+             color: "background",
+             backgroundColor: 'cardBg',
              borderColor: "text",
             //  border: "solid 0.5px",
              boxShadow: "rgba(0, 0, 0, 0.15) 0px 3px 8px 0px;",
