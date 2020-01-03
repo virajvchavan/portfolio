@@ -1,37 +1,37 @@
 [
     {
         "title": "Quickinsure",
-        "url": "",
-        "description": ""
-    },
-    {
-        "title": "LearnAwesome",
-        "url": "",
-        "description": ""
+        "url": "https://quickinsure.co.in/",
+        "description": "An insurance comparison service with an MIS built in Ruby on Rails. Worked as a full-stack developer in a team of 5"
     },
     {
         "title": "Frontend for Apps at Media.net",
-        "url": "",
-        "description": "Hey!"
+        "url": "#",
+        "description": "Part of the front-end team for webapps having more than a million impressions per day."
+    },
+    {
+        "title": "LearnAwesome",
+        "url": "http://learnawesome.org/",
+        "description": "An open source platform for expolring the best learning resources for every topic. Built in Ruby on Rails, worked at the initial stages as a full-stack developer."
     },
     {
         "title": "Personal blog (This website)",
         "url": "https://virajc.tech",
-        "description": "Hey!"
+        "description": "Personal portfolio and a place where I publish my writings. Built in GatsbyJs, React."
     },
     {
         "title": "Game of Shares",
-        "url": "",
-        "description": ""
+        "url": "#",
+        "description": "A share market simulator to learn the basics of share market built in PHP, MySQL. A hobby project built in college which went viral for a short period of time among 300+ students."
     },
     {
         "title": "BookShare",
-        "url": "",
-        "description": ""
+        "url": "#",
+        "description": "A web portal acting as a community for the book readers of the college WCE, Sangli built in PHP, MySQL, had 75+ active happy users when active."
     },
     {
         "title": "Days Until",
-        "url": "",
-        "description": ""
+        "url": "https://chrome.google.com/webstore/detail/days-until-days-countdown/eddnhnjblfligfijgckclhnkmilmdhij",
+        "description": "A simple Chrome extension I built which gained 3000+ weekly active users organically and was featured on ProductHunt."
     }
 ]

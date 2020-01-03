@@ -172,8 +172,6 @@ export const Project = props => (
              borderRadius: "3px",
              color: "background",
              backgroundColor: 'cardBg',
-             borderColor: "text",
-            //  border: "solid 0.5px",
              boxShadow: "rgba(0, 0, 0, 0.15) 0px 3px 8px 0px;",
              padding: "15px",
              margin: "8px",
@@ -183,7 +181,6 @@ export const Project = props => (
                "calc(33.3% - 16px)"
              ],
              minHeight: "144px",
-             fontWeight: "bold",
              minWidth: "340px",
              maxWidth: "450px",
              ":hover": {
@@ -193,6 +190,7 @@ export const Project = props => (
              ...props.sx
            }}
          >
-           <div>{props.data.title}</div>
+          <div className='title' sx={{ fontWeight: "bold", ":hover": { color: 'highlight'}}}>{props.data.title}</div>
+          <div sx={{ fontSize: '12px', marginTop: '10px', fontSize: '14px' }}>{props.data.description}</div>
          </div>
        );
