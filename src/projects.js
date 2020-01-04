@@ -8,7 +8,7 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
-        projects: allProject {
+        projects: allProject(sort: { fields: index }) {
           nodes {
             title
             url
@@ -21,16 +21,18 @@ export default () => (
     render={data => {
       let projects = data.projects.nodes;
       return (
-        <div sx={{
-          display: 'flex',
-          flexFlow: 'wrap',
-          maxWidth: '1068px'
-        }}>
+        <div
+          sx={{
+            display: "flex",
+            flexFlow: "wrap",
+            maxWidth: "1068px"
+          }}
+        >
           {projects.map((item, key) => {
-            return <Project data={item} key={item.title} />
+            return <Project data={item} key={item.title} />;
           })}
         </div>
-      )
+      );
     }}
   />
-)
+);
