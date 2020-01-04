@@ -85,7 +85,7 @@ class Modal extends React.Component {
           </div>
         }
         <div className={this.state.showModal ? 'blur' : ''}>
-          <SimpleLink onClick={this.openModal}>Looking for a new job!</SimpleLink>
+          <SimpleLink onClick={this.openModal}>Are you hiring?</SimpleLink>
           {this.props.children}
         </div>
     </div>

@@ -22,9 +22,9 @@ export default {
         accent: '#f0f',
         muted: '#111',
         gray: '#888',
-        link: 'hsl(310, 100%, 57%)',
+        link: '#80acff',
         highlight: 'hsl(310, 100%, 57%)',
-        cardBg: '#ececec',
+        cardBg: '#e0e0e0',
       },
       dark: {
         text: '#fff',

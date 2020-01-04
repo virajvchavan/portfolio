@@ -167,7 +167,8 @@ export const SocialLinks = props =>
 
 export const Project = props => (
          <div
-           sx={{
+          className='projectCard'
+          sx={{
              display: "block",
              borderRadius: "3px",
              color: "background",
@@ -184,13 +185,16 @@ export const Project = props => (
              minWidth: "340px",
              maxWidth: "450px",
              ":hover": {
-               boxShadow: "rgba(0, 0, 0, 0.21) 0px 6px 16px 0px;",
+              boxShadow: "rgba(0, 0, 0, 0.21) 0px 6px 16px 0px;",
              },
              cursor: 'pointer',
              ...props.sx
            }}
          >
-          <div className='title' sx={{ fontWeight: "bold", ":hover": { color: 'highlight'}}}>{props.data.title}</div>
+          <div className='title' sx={{ fontWeight: "bold" }}>
+            {props.data.title}
+            <span sx={{float: 'right', marginTop: '-12px', marginRight: '-7px', fontSize: '15px'}}>&#8599;</span>
+          </div>
           <div sx={{ fontSize: '12px', marginTop: '10px', fontSize: '14px' }}>{props.data.description}</div>
-         </div>
+        </div>
        );
