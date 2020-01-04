@@ -8,19 +8,18 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
-        projects: allProjectsJson {
-          edges {
-            node {
-              title
-              url
-              description
-            }
+        projects: allProject {
+          nodes {
+            title
+            url
+            description
+            slug
           }
         }
       }
     `}
     render={data => {
-      let projects = data.projects.edges.map(e => e.node);
+      let projects = data.projects.nodes;
       return (
         <div sx={{
           display: 'flex',

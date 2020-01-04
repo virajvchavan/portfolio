@@ -74,6 +74,50 @@ exports.sourceNodes = ({ actions, schema }) => {
       interfaces: ['Node'],
     })
   )
+
+  actions.createTypes(
+    schema.buildObjectType({
+      name: 'Project',
+      fields: {
+        id: { type: 'ID!' },
+        title: {
+          type: 'String!',
+        },
+        slug: {
+          type: 'String!',
+        },
+        url: {
+          type: 'String!',
+        },
+        start_date: {
+          type: 'Date',
+          extensions: { dateformat: {} }
+        },
+        end_date: {
+          type: 'Date',
+          extensions: { dateformat: {} }
+        },
+        index: {
+          type: 'Int'
+        },
+        tags: {
+          type: '[String]!',
+        },
+        description: {
+          type: 'String!',
+        },
+        body: {
+          type: 'String!',
+          resolve: mdxResolverPassthrough('body'),
+        },
+        html: {
+          type: 'String!',
+          resolve: mdxResolverPassthrough('html'),
+        }
+      },
+      interfaces: ['Node'],
+    })
+  )
 }
 
 exports.onCreateNode = ({
@@ -87,44 +131,82 @@ exports.onCreateNode = ({
 
   const parent = getNode(node.parent)
   const child = getNode(node.id)
-  if (parent.sourceInstanceName !== 'posts') return
+  if (parent.sourceInstanceName === 'posts') {
+    const slug = '/blog' + createFilePath({
+      node,
+      getNode,
+    })
 
-  const slug = '/blog' + createFilePath({
-    node,
-    getNode,
-  })
+    const title = get(node, 'headings[1].value',
+      get(node, 'frontmatter.title', '')
+    )
+    const date = get(node, 'frontmatter.date')
+    const draft = get(node, 'frontmatter.draft', false)
+    const tags = get(node, 'frontmatter.tags', [])
+    const importance = get(node, 'frontmatter.importance', 5)
 
-  const title = get(node, 'headings[1].value',
-    get(node, 'frontmatter.title', '')
-  )
-  const date = get(node, 'frontmatter.date')
-  const draft = get(node, 'frontmatter.draft', false)
-  const tags = get(node, 'frontmatter.tags', [])
-  const importance = get(node, 'frontmatter.importance', 5)
+    actions.createNode({
+      slug,
+      title,
+      date,
+      draft,
+      importance,
+      tags,
+      id: createNodeId(`${node.id} >>> Post`),
+      parent: node.id,
+      children: [],
+      internal: {
+        type: `Post`,
+        contentDigest: createContentDigest({
+          slug,
+          date,
+          body: node.rawBody,
+        }),
+        content: node.rawBody,
+        description: `Blog Posts`,
+      },
+    })
 
-  actions.createNode({
-    slug,
-    title,
-    date,
-    draft,
-    importance,
-    tags,
-    id: createNodeId(`${node.id} >>> Post`),
-    parent: node.id,
-    children: [],
-    internal: {
-      type: `Post`,
-      contentDigest: createContentDigest({
-        slug,
-        date,
-        body: node.rawBody,
-      }),
-      content: node.rawBody,
-      description: `Blog Posts`,
-    },
-  })
+    actions.createParentChildLink({ parent, child })
+  } else if (parent.sourceInstanceName === 'projects') {
+    const slug = '/project' + createFilePath({
+      node,
+      getNode,
+    })
 
-  actions.createParentChildLink({ parent, child })
+    const title = get(node, 'frontmatter.title', '')
+    const start_date = get(node, 'frontmatter.start_date', '')
+    const end_date = get(node, 'frontmatter.end_date', '')
+    const tags = get(node, 'frontmatter.tags', [])
+    const index = get(node, 'frontmatter.index', 100)
+    const description = get(node, 'frontmatter.description', '')
+    const url = get(node, 'frontmatter.url', '#')
+
+    actions.createNode({
+      slug,
+      title,
+      start_date,
+      end_date,
+      index,
+      tags,
+      description,
+      url,
+      id: createNodeId(`${node.id} >>> Project`),
+      parent: node.id,
+      children: [],
+      internal: {
+        type: `Project`,
+        contentDigest: createContentDigest({
+          slug,
+          body: node.rawBody,
+        }),
+        content: node.rawBody,
+        description: `Projects`,
+      },
+    })
+
+    actions.createParentChildLink({ parent, child })
+  }
 }
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
