@@ -262,6 +262,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const posts = result.data.allPost.edges.map(e => e.node)
   const list = result.data.allPost.edges.map(e => e.node)
 
+  // create page for each post
   posts.forEach(post => {
     actions.createPage({
       path: post.slug,
@@ -275,6 +276,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const limit = 16
   const pages = Math.ceil(list.length / limit)
 
+  // create index of all blog posts
   Array.from({ length: pages }).forEach((n, i) => {
     const pi = i
     const ni = i + 2
@@ -299,5 +301,36 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
     })
   })
+
+  const projectsQuery = await graphql(`
+    {
+      allProject(
+        sort: { fields: [index, title], order: ASC }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            id
+            slug
+          }
+        }
+      }
+    }
+  `);
+
+  if (projectsQuery.errors) reporter.panic(projectsQuery.errors);
+
+  const projects = projectsQuery.data.allProject.edges.map(e => e.node);
+
+  projects.forEach(project => {
+    actions.createPage({
+      path: project.slug,
+      component: require.resolve("./src/templates/project.js"),
+      context: {
+        id: project.id
+      }
+    });
+  });
+
 }
 

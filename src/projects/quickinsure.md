@@ -8,4 +8,4 @@ end_date: "2019-02-23"
 tags: ['ruby', 'ruby on rails', 'javascript', 'mongodb']
 ---
 
-Hey!
+An insurance comparison service with an MIS built in Ruby on Rails. Worked as a full-stack developer in a team of 5 for over a year.
