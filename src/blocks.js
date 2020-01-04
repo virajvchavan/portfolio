@@ -6,6 +6,7 @@ import {
   FaGithub as GitHub,
   FaLinkedin as Linkedin
 } from 'react-icons/fa'
+import { Link } from "gatsby";
 
 
 export const Banner = props =>
@@ -96,7 +97,7 @@ export const Skill = props =>
   <span
     sx={{
       color: 'background',
-      backgroundColor: 'text',
+      backgroundColor: 'cardBg',
       padding: '3px',
       margin: '0 6px 6px 0',
       borderRadius: '4px',
@@ -166,35 +167,55 @@ export const SocialLinks = props =>
   </div>
 
 export const Project = props => (
-         <div
-          className='projectCard'
-          sx={{
-             display: "block",
-             borderRadius: "3px",
-             color: "background",
-             backgroundColor: 'cardBg',
-             boxShadow: "rgba(0, 0, 0, 0.15) 0px 3px 8px 0px;",
-             padding: "15px",
-             margin: "8px",
+         <Link
+           sx={{
              width: [
                "calc(100% - 16px)",
                "calc(50% - 16px)",
                "calc(33.3% - 16px)"
              ],
-             minHeight: "144px",
+             margin: "8px",
              minWidth: "340px",
              maxWidth: "450px",
-             ":hover": {
-              boxShadow: "rgba(0, 0, 0, 0.21) 0px 6px 16px 0px;",
-             },
-             cursor: 'pointer',
-             ...props.sx
+             textDecoration: 'none'
            }}
+           to={props.data.slug}
          >
-          <div className='title' sx={{ fontWeight: "bold" }}>
-            {props.data.title}
-            <span sx={{float: 'right', marginTop: '-12px', marginRight: '-7px', fontSize: '15px'}}>&#8599;</span>
-          </div>
-          <div sx={{ fontSize: '12px', marginTop: '10px', fontSize: '14px' }}>{props.data.description}</div>
-        </div>
+           <div
+             className="projectCard"
+             sx={{
+               display: "block",
+               borderRadius: "3px",
+               color: "background",
+               backgroundColor: "cardBg",
+               boxShadow: "rgba(0, 0, 0, 0.15) 0px 3px 8px 0px;",
+               padding: "15px",
+               ":hover": {
+                 boxShadow: "rgba(0, 0, 0, 0.21) 0px 6px 16px 0px;"
+               },
+               minHeight: "144px",
+               cursor: "pointer",
+               ...props.sx
+             }}
+           >
+             <div className="title" sx={{ fontWeight: "bold" }}>
+               {props.data.title}
+               <span
+                 sx={{
+                   float: "right",
+                   marginTop: "-12px",
+                   marginRight: "-7px",
+                   fontSize: "15px"
+                 }}
+               >
+                 &#8599;
+               </span>
+             </div>
+             <div
+               sx={{ fontSize: "12px", marginTop: "10px", fontSize: "14px" }}
+             >
+               {props.data.description}
+             </div>
+           </div>
+         </Link>
        );
