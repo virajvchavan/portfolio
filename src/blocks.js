@@ -213,9 +213,7 @@ export const Project = props => (
                  &#8599;
                </span>
              </div>
-             <div
-               sx={{ marginTop: "10px", fontSize: "14px" }}
-             >
+             <div sx={{ marginTop: "10px", fontSize: "14px", color: 'cardText', fontWeight: 500 }}>
                {props.data.description}
              </div>
            </div>

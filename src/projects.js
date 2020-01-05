@@ -22,6 +22,7 @@ export default () => (
       let projects = data.projects.nodes;
       return (
         <div
+          className='projectCards'
           sx={{
             display: "flex",
             flexFlow: "wrap",

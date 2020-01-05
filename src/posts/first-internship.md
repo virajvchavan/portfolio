@@ -2,6 +2,7 @@
 title: 'What I learned from my first ever software development internship'
 date: 2018-07-25
 importance: 10
+tags: ['ruby']
 ---
 
 I was a student at an engineering college in India. After 3 and a half years years of learning computer science academically, I now had a chance to test my knowledge in the real world through an internship.

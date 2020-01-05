@@ -65,7 +65,7 @@ class Modal extends React.Component {
               width: '85%',
               maxWidth: '630px',
               position: 'absolute',
-              top: '40%',
+              top: '45%',
               left: '50%',
               transform: 'translate(-50%, -50%)',
               fontSize: '16px',

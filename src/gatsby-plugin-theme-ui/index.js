@@ -13,6 +13,7 @@ export default {
     link: '#008eff',
     highlight: '#00BCD4',
     cardBg: '#494850',
+    cardText: '#e3e3e3',
     modes: {
       black: {
         text: '#fff',
@@ -25,6 +26,7 @@ export default {
         link: '#80acff',
         highlight: 'hsl(310, 100%, 57%)',
         cardBg: '#e0e0e0',
+        cardText: '#2f2f2f'
       },
       dark: {
         text: '#fff',
