@@ -40,8 +40,7 @@ export default ({ title, date, draft, children, location, ...props }) => {
           ))}
         </ul>
         <hr sx={{ margin: 0 }} />
-        <article>
-          <Styled.h3 sx={{ marginTop: "12px" }}>{title}</Styled.h3>
+        <article sx={{fontSize: '16px'}}>
           {children}
         </article>
       </div>

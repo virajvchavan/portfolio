@@ -4,7 +4,7 @@ export default {
   initialColorMode: 'light',
   colors: {
     text: '#000',
-    background: '#fff',
+    background: '#fdfdfd',
     primary: 'hsl(240, 100%, 57%)',
     secondary: 'hsl(260, 100%, 57%)',
     accent: 'hsl(280, 100%, 57%)',
@@ -17,7 +17,7 @@ export default {
     modes: {
       black: {
         text: '#fff',
-        background: '#000',
+        background: '#0e0e0e',
         primary: '#0ff',
         secondary: '#0fc',
         accent: '#f0f',

@@ -9,3 +9,7 @@ tags: ['javascript', 'reactjs', 'nodejs', 'php', 'html', 'css']
 ---
 
 Hey!
+
+I understood the challenges involved in buliding large complex systems.
+
+caching
