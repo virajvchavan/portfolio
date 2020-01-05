@@ -78,6 +78,7 @@ export default props => {
         display: "flex",
         flexDirection: "column"
       }}
+      className={mode === 'light' ? 'lightmode' : 'darkmode'}
     >
       <Global
         styles={{
@@ -107,26 +108,29 @@ export default props => {
             variant: "styles.navitem",
             mr: 3
           }}
+          activeClassName='activeLink'
         >
           Viraj C
         </Styled.a>
         <Styled.a
           as={Link}
-          to="/blog"
+          to="/blog/"
           sx={{
             variant: "styles.navitem",
             mr: 3
           }}
+          activeClassName='activeLink'
         >
           Blog
         </Styled.a>
         <Styled.a
           as={Link}
-          to="/project/quickinsure"
+          to="/project/quickinsure/"
           sx={{
             variant: "styles.navitem",
             mr: 3
           }}
+          activeClassName='activeLink'
         >
           Projects
         </Styled.a>
@@ -194,7 +198,7 @@ export default props => {
           </Styled.a>
           <Styled.a
             as={Link}
-            to="/project/quickinsure"
+            to="/project/quickinsure/"
             sx={{
               variant: "styles.navitem",
               mr: 4

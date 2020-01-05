@@ -53,7 +53,10 @@ class Modal extends React.Component {
             height: '100%',
             backgroundColor: '#eaeaea20',
             zIndex: 1
-        }} onClick={this.handleClick} className='modal-overlay'>
+        }} onClick={this.handleClick} className='modal-overlay'
+          role='button'
+          tabIndex='-1'
+        >
             <div sx={{
               padding: '20px',
               paddingBottom: 0,
@@ -73,7 +76,7 @@ class Modal extends React.Component {
                 top: '2px',
                 right: '5px',
                 cursor: 'pointer'
-              }} onClick={this.closeModal}>close</span>
+              }} onClick={this.closeModal} role='button' tabIndex='-1'>close</span>
             Hi! <br /> <br />
             I'm activly exploring new job opportunities as a <span sx={{ color: 'highlight' }}>full stack/backend</span> software developer. I would love to work in a <span sx={{ color: 'highlight' }}>remote-first</span> company.<br/><br/>
             I have used <span sx={{ color: 'highlight' }}>Ruby on Rails, JavaScript, React</span> to build apps before. But I'll be quick and excited to learn new technologies. <br/><br/>

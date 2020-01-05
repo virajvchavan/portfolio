@@ -20,10 +20,16 @@
     font-weight: bold;
 }
 .projectLink.darkmode {
-    background-color: #5c5c5c;
+    background-color: #404040;
     color: white;
 }
 .projectLinkActive.darkmode {
     background-color: #e0e0e0;
     color: black;
+}
+.lightmode .activeLink {
+    color: hsl(240,100%,57%);
+}
+.darkmode .activeLink {
+    color: #0ff;
 }

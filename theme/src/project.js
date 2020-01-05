@@ -4,13 +4,14 @@ import { Link } from "gatsby";
 import { useColorMode } from "theme-ui";
 
 export default ({ title, date, draft, children, location, ...props }) => {
-    const [colorMode, setColorMode] = useColorMode();
+    const [colorMode] = useColorMode();
     return (
       <div
         sx={{
           maxWidth: "container"
         }}
       >
+        <h5 sx={{margin: 0}}>Projects I have worked on:</h5>
         <ul
           sx={{
             listStyleType: "none",

@@ -120,7 +120,9 @@ export const SimpleLink = props =>
       cursor: 'pointer',
       ...props.sx
       }}
-      onClick={props.onClick}>
+      onClick={props.onClick}
+      role='menuitem'
+      tabIndex='0'>
       {props.children}
   </span >
 
@@ -212,7 +214,7 @@ export const Project = props => (
                </span>
              </div>
              <div
-               sx={{ fontSize: "12px", marginTop: "10px", fontSize: "14px" }}
+               sx={{ marginTop: "10px", fontSize: "14px" }}
              >
                {props.data.description}
              </div>
