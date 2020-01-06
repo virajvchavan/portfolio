@@ -1,11 +1,11 @@
 ---
-title: 'Personal blog (This website)'
+title: 'Personal blog'
 url: 'https://virajc.tech'
 index: 4
 description: "Personal portfolio and a place to publish blogs. Built in GatsbyJs, React."
 start_date: "2019-02-25"
 end_date: ""
-tags: ['javascript', 'reactjs', 'nodejs', 'php', 'html', 'css']
+tags: ['reacts', 'gatsby', 'nodejs', 'javascript', 'html', 'css']
 ---
 
-Hey!
+### Personal blog (This website)

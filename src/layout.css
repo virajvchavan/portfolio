@@ -37,3 +37,7 @@
      filter: blur(3px);
     -webkit-filter: blur(3px);
 }
+a.project_linkouts {
+    margin-right: 20px;
+    text-decoration: none;
+}
