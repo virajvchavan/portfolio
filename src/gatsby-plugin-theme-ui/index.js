@@ -186,10 +186,10 @@ export default {
     },
     blockquote: {
       fontWeight: 'bold',
-      fontSize: 3,
+      fontSize: 2,
       mx: 0,
       px: 3,
-      my: 5,
+      my: 4,
       borderLeft: '4px solid',
     },
     navlink: {
