@@ -20,5 +20,12 @@ module.exports = {
         trackingId: "UA-155023343-1"
       }
     },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    }
   ]
 };
