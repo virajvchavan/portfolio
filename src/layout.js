@@ -134,6 +134,17 @@ export default props => {
         >
           Projects
         </Styled.a>
+        <Styled.a
+          as={Link}
+          to="/about/"
+          sx={{
+            variant: "styles.navitem",
+            mr: 3
+          }}
+          activeClassName='activeLink'
+        >
+          About
+        </Styled.a>
         <div sx={{ mx: "auto" }} />
         <ColorButton mode={mode} onClick={cycleMode} />
       </header>
@@ -178,7 +189,7 @@ export default props => {
           </Styled.a>
           <Styled.a
             as={Link}
-            to="/blog"
+            to="/blog/"
             sx={{
               variant: "styles.navitem",
               mr: 3
@@ -188,7 +199,7 @@ export default props => {
           </Styled.a>
           <Styled.a
             as={Link}
-            to="/about"
+            to="/about/"
             sx={{
               variant: "styles.navitem",
               mr: 3

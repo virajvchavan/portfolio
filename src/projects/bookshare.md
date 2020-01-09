@@ -15,3 +15,5 @@ tags: ['php', 'mysql', 'javascript', 'html', 'css']
 This was the first useful project that I had ever completed back when I was still in college.
 
 <img src="/bookshare.png"/>
+
+PHP is very easy to start with. But give it to a beginner with no experience and he'll probably write the most un-maintainable code you can imagine. That's what I did.

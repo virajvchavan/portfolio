@@ -28,11 +28,11 @@ Gatsby can be considered a replacement for <a href="" target="_blank">create-rea
 
 A traditional SPA is one large bundle of javascript that's loaded in your browser. That javascript then handles everything from rendering pages, dealing with state, handling routes and a lot more. All of this can take a toll on initial page loading times, and importantly SEO.
 
-What Gatsby does is, it uses powerful preconfiguration to build only static files for faster page load times. It gives extra benefits such as code-splitting, optimized image loading, data-prefetching and asset optimization. Even though Gatsby generates static files, Gatsby apps <a href="https://www.gatsbyjs.org/docs/react-hydration/" target="_blank">rehydrate</a> from static HTML rendered by ReactDOM APIs into an app running client-side JavaScript.
+What Gatsby does is, it uses powerful pre-configuration to build only static files for faster page load times. It gives extra benefits such as code-splitting, optimized image loading, data pre-fetching and asset optimization. Even though Gatsby generates static files, Gatsby apps <a href="https://www.gatsbyjs.org/docs/react-hydration/" target="_blank">rehydrate</a> from static HTML rendered by ReactDOM APIs into an app running client-side JavaScript.
 
 It also has a large ecosystem of <a href="https://www.gatsbyjs.org/plugins/" target="_blank">plugins</a> and themes you can use to speed-up your development.
 I used the `gatsby-plugin-mdx` plugin to write blogs in markdown and create HTML pages from it a build time. Also used `gatsby-plugin-theme-ui` to help manage the styles that support multiple color modes. (Try clicking the button at the top-right corner.)
 
 Gatsby also uses <a href="https://graphql.org/" target="_blank">GraphQL</a>, something I had only heard of. I ended up reading all about it, and experimented with it for quiet some time.
 
-(I will probably write a seperate blog to explain Gatsby in detail).
+(I will probably write a separate blog to explain Gatsby in detail).
