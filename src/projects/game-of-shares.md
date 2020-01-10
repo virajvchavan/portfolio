@@ -12,9 +12,10 @@ tags: ['php', 'mysql', 'javascript', 'html', 'css']
 
 <a href="https://github.com/virajvchavan/Game-of-Shares" class="project_linkouts" target='_blank'>Github</a>
 
-I was in my 2nd year of engineering degree when I had this idea for a Share Market Simulator, to learn the basics of the share market and have fun while doing it.
+I was in my 2nd year of engineering degree when I had this idea:
+> A gamified Share Market Simulator, to learn the basics of the share market.
 
-Looking back, it was more of an enjoyable betting game on virtual stocks, than something that would teach you about the stock market.
+Looking back, it was more of an enjoyable betting game on virtual stocks, than something that would teach you much about the stock market.
 But it was something that introduced me to the joy of building products!
 
 <img src="/game-of-shares.png"/>
@@ -61,9 +62,9 @@ But this is why the code was bad:
 - Direct database queries in random places across PHP files
 - No way to track changes in database structure
 - It probably has some SQL injection security issues (had not even checked!)
+- No error monitoring for the deployed app
 - Deployed on a free shared hosting platform(<a href="https://www.hostinger.in/">Hostinger</a>), deploying changes was a lot of manual work
 - The shared hosting exhausted its daily limits multiple times, and just stopped working
-- I prioritized building and pushing new changes faster over readable/maintainable code
 
 ---
 
