@@ -24,8 +24,17 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Disable the loading spinner.
-        showSpinner: false,
-      },
+        showSpinner: false
+      }
+    },
+    {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        includePaths: ["/", { regex: "^/blog" }],
+        height: 3,
+        prependToBody: false,
+        color: `#777`
+      }
     }
   ]
 };
