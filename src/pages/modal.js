@@ -87,7 +87,7 @@ class Modal extends React.Component {
             <span sx={{ fontSize: '13px'}}>Also take a look around this site to get more insights.</span>
             <br/><br/>
 
-            You can email me on <a href='mailto:virajc@live.com' target='_blank'>virajc@live.com</a>
+            You can email me on <a href='mailto:virajc@live.com' target='_blank' rel="noopener noreferrer">virajc@live.com</a>
 
             <SocialLinks sx={{paddingBottom: 0}} />
             </div>
