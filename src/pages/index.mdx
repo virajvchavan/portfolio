@@ -1,10 +1,11 @@
 import { Banner, Tiles, Container, List, Skill } from '../blocks'
-import Modal from "./modal.js";
+import ModalWrapper from "./modal.js";
+import Projects from '../projects.js'
 export const wide = true
 
 <Banner>
 
-<Modal>
+<ModalWrapper>
 
 # Viraj Chavan
 
@@ -14,7 +15,6 @@ Web Application Developer at <a href="https://media.net" target="_blank">Media.n
 <Skill>ReactJs</Skill>
 <Skill>MongoDB</Skill>
 <Skill>MySQL</Skill>
-<Skill>GatsbyJS</Skill>
 
 <br/><br/>
 
@@ -23,7 +23,11 @@ Web Application Developer at <a href="https://media.net" target="_blank">Media.n
 - <a href="https://github.com/virajvchavan" target="_blank">GitHub</a>
 - <a href="https://www.linkedin.com/in/virajvchavan/" target="_blank">Linkedin</a>
 
-</Modal>
+<div style="margin-top: 6em">
+    <h3 style="margin-left: 10px;">I like to build things.</h3>
+    <Projects />
+</div>
+</ModalWrapper>
 
 </Banner>
 

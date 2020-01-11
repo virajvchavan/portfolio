@@ -73,110 +73,152 @@ export default props => {
   return (
     <div
       sx={{
-        variant: 'styles.root',
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-      }}>
+        variant: "styles.root",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column"
+      }}
+      className={mode === 'light' ? 'lightmode' : 'darkmode'}
+    >
       <Global
         styles={{
-          '*': {
-            boxSizing: 'border-box',
+          "*": {
+            boxSizing: "border-box"
           },
           body: {
-            margin: 0,
+            margin: 0
           }
         }}
       />
       <header
         sx={{
-          width: '100%',
-          display: 'flex',
-          alignItems: 'center',
-          maxWidth: 'wide',
-          mx: 'auto',
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          maxWidth: "wide",
+          mx: "auto",
           px: 3,
-          py: 4,
-        }}>
+          py: 4
+        }}
+      >
         <Styled.a
           as={Link}
-          to='/'
+          to="/"
           sx={{
-            variant: 'styles.navitem',
-            mr: 3,
-          }}>
+            variant: "styles.navitem",
+            mr: 3
+          }}
+          activeClassName='activeLink'
+        >
           Viraj C
         </Styled.a>
         <Styled.a
           as={Link}
-          to='/blog'
+          to="/blog/"
           sx={{
-            variant: 'styles.navitem',
-            mr: 3,
-          }}>
+            variant: "styles.navitem",
+            mr: 3
+          }}
+          activeClassName='activeLink'
+        >
           Blog
         </Styled.a>
-        <div sx={{ mx: 'auto' }} />
-        <ColorButton
-          mode={mode}
-          onClick={cycleMode}
-        />
+        <Styled.a
+          as={Link}
+          to="/project/quickinsure/"
+          sx={{
+            variant: "styles.navitem",
+            mr: 3
+          }}
+          activeClassName='activeLink'
+        >
+          Projects
+        </Styled.a>
+        <Styled.a
+          as={Link}
+          to="/about/"
+          sx={{
+            variant: "styles.navitem",
+            mr: 3
+          }}
+          activeClassName='activeLink'
+        >
+          About
+        </Styled.a>
+        <div sx={{ mx: "auto" }} />
+        <ColorButton mode={mode} onClick={cycleMode} />
       </header>
       <main
         sx={{
-          width: '100%',
-          maxWidth: 'wide',
+          width: "100%",
+          maxWidth: "wide",
           px: 3,
-          mx: 'auto',
-          flex: '1 1 auto',
-        }}>
+          mx: "auto",
+          flex: "1 1 auto"
+        }}
+      >
         {props.children}
       </main>
       <footer
         sx={{
           px: 3,
           py: 5,
-          width: '100%',
-          maxWidth: 'wide',
-          mx: 'auto',
-        }}>
+          width: "100%",
+          maxWidth: "wide",
+          mx: "auto"
+        }}
+      >
         <SocialLinks />
         <div
           sx={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            alignItems: 'center',
-            fontSize: 0,
-          }}>
+            display: "flex",
+            flexWrap: "wrap",
+            alignItems: "center",
+            fontSize: 0
+          }}
+        >
           <Styled.a
             as={Link}
-            to='/'
+            to="/"
             sx={{
-              variant: 'styles.navitem',
-              mr: 3,
-            }}>
+              variant: "styles.navitem",
+              mr: 3
+            }}
+          >
             Viraj C
           </Styled.a>
           <Styled.a
             as={Link}
-            to='/blog'
+            to="/blog/"
             sx={{
-              variant: 'styles.navitem',
-              mr: 3,
-            }}>
+              variant: "styles.navitem",
+              mr: 3
+            }}
+          >
             Blog
           </Styled.a>
           <Styled.a
             as={Link}
-            to='/about'
+            to="/about/"
             sx={{
-              variant: 'styles.navitem',
-              mr: 4,
-            }}>
+              variant: "styles.navitem",
+              mr: 3
+            }}
+          >
             About
+          </Styled.a>
+          <Styled.a
+            as={Link}
+            to="/project/quickinsure/"
+            sx={{
+              variant: "styles.navitem",
+              mr: 4
+            }}
+          >
+            Projects
           </Styled.a>
         </div>
       </footer>
     </div>
-  )
+  );
 }

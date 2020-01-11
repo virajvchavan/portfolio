@@ -4,7 +4,7 @@ export default {
   initialColorMode: 'light',
   colors: {
     text: '#000',
-    background: '#fff',
+    background: '#fdfdfd',
     primary: 'hsl(240, 100%, 57%)',
     secondary: 'hsl(260, 100%, 57%)',
     accent: 'hsl(280, 100%, 57%)',
@@ -12,17 +12,21 @@ export default {
     gray: '#555',
     link: '#008eff',
     highlight: '#00BCD4',
+    cardBg: '#494850',
+    cardText: '#e3e3e3',
     modes: {
       black: {
         text: '#fff',
-        background: '#000',
+        background: '#0e0e0e',
         primary: '#0ff',
         secondary: '#0fc',
         accent: '#f0f',
         muted: '#111',
         gray: '#888',
-        link: 'hsl(310, 100%, 57%)',
+        link: '#80acff',
         highlight: 'hsl(310, 100%, 57%)',
+        cardBg: '#e0e0e0',
+        cardText: '#2f2f2f'
       },
       dark: {
         text: '#fff',
@@ -182,10 +186,10 @@ export default {
     },
     blockquote: {
       fontWeight: 'bold',
-      fontSize: 3,
+      fontSize: 2,
       mx: 0,
       px: 3,
-      my: 5,
+      my: 4,
       borderLeft: '4px solid',
     },
     navlink: {

@@ -23,6 +23,13 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'projects',
+        path: 'src/projects',
+      }
+    },
+    {
       resolve: 'gatsby-plugin-feed',
       options: require('./feed')
     },

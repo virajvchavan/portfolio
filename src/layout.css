@@ -2,3 +2,42 @@
     filter: blur(3px);
     -webkit-filter: blur(3px);
 }
+.projectCard:hover .title {
+   text-decoration: underline;
+}
+.projectLink {
+    float: left;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 2px;
+    background-color: #eaeaea;
+    color: black;
+    text-decoration: none;
+}
+.projectLinkActive {
+    color: white;
+    background-color: #494850;
+    font-weight: bold;
+}
+.projectLink.darkmode {
+    background-color: #404040;
+    color: white;
+}
+.projectLinkActive.darkmode {
+    background-color: #e0e0e0;
+    color: black;
+}
+.lightmode .activeLink {
+    color: hsl(240,100%,57%);
+}
+.darkmode .activeLink {
+    color: #0ff;
+}
+.modal-overlay .projectCards {
+     filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+a.project_linkouts {
+    margin-right: 20px;
+    text-decoration: none;
+}
