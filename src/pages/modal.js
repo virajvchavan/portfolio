@@ -84,7 +84,7 @@ class Modal extends React.Component {
             <a href='/resume.pdf' download="Viraj Chavan Resume" sx={{fontSize: '13px', textDecoration: 'underline !important'}} >
               Here's my resume.
             </a> &nbsp;
-            <span sx={{ fontSize: '13px'}}>Also take a look around this site to get a more insights.</span>
+            <span sx={{ fontSize: '13px'}}>Also take a look around this site to get more insights.</span>
             <br/><br/>
 
             You can email me on <a href='mailto:virajc@live.com' target='_blank'>virajc@live.com</a>

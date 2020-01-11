@@ -47,6 +47,5 @@ This is why the code was bad:
 - Security issues
 - No easy way to modify features
 
----
 
 As the first real project used by real people, it gave me the confident I needed to build new things!
