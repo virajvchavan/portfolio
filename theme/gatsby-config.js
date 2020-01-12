@@ -1,11 +1,6 @@
 const pkg = require('./package.json')
 
 module.exports = {
-  siteMetadata: {
-    title: 'Viraj Chavan1',
-    description: 'Blog',
-    siteUrl: 'https://virajvc.tech',
-  },
   plugins: [
     {
       resolve: 'gatsby-plugin-mdx',
