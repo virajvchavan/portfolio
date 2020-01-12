@@ -41,3 +41,9 @@ a.project_linkouts {
     margin-right: 20px;
     text-decoration: none;
 }
+.booksLink {
+    color: #494850 !important;
+}
+.darkmode .booksLink {
+    color: #e0e0e0 !important;
+}

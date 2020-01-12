@@ -78,7 +78,7 @@ export default props => {
         display: "flex",
         flexDirection: "column"
       }}
-      className={mode === 'light' ? 'lightmode' : 'darkmode'}
+      className={mode === "light" ? "lightmode" : "darkmode"}
     >
       <Global
         styles={{
@@ -108,7 +108,7 @@ export default props => {
             variant: "styles.navitem",
             mr: 3
           }}
-          activeClassName='activeLink'
+          activeClassName="activeLink"
         >
           Viraj C
         </Styled.a>
@@ -119,7 +119,7 @@ export default props => {
             variant: "styles.navitem",
             mr: 3
           }}
-          activeClassName='activeLink'
+          activeClassName="activeLink"
         >
           Blog
         </Styled.a>
@@ -130,7 +130,7 @@ export default props => {
             variant: "styles.navitem",
             mr: 3
           }}
-          activeClassName='activeLink'
+          activeClassName="activeLink"
         >
           Projects
         </Styled.a>
@@ -141,7 +141,7 @@ export default props => {
             variant: "styles.navitem",
             mr: 3
           }}
-          activeClassName='activeLink'
+          activeClassName="activeLink"
         >
           About
         </Styled.a>
@@ -212,10 +212,20 @@ export default props => {
             to="/project/quickinsure/"
             sx={{
               variant: "styles.navitem",
-              mr: 4
+              mr: 3
             }}
           >
             Projects
+          </Styled.a>
+          <Styled.a
+            as={Link}
+            to="/readings/"
+            sx={{
+              variant: "styles.navitem",
+              mr: 4
+            }}
+          >
+            Readings
           </Styled.a>
         </div>
       </footer>
