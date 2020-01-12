@@ -35,6 +35,12 @@ module.exports = {
         prependToBody: false,
         color: `#777`
       }
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `virajc`
+      }
     }
   ]
 };
