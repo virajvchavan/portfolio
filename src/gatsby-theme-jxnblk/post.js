@@ -25,7 +25,7 @@ export default ({
   ...props
 }) => {
   let disqusConfig = {
-    url: `${"https://virajvc.tech" + location.pathname}`,
+    url: `${"https://virajc.tech" + location.pathname}`,
     identifier: title,
     title: title
   };
