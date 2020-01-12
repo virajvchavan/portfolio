@@ -227,6 +227,10 @@ export default props => {
           >
             Readings
           </Styled.a>
+          <div sx={{ mx: "auto" }} />
+          <div sx={{ my: 2 }}>
+            Theme inspired from: <a href="http://jxnblk.com" target="_blank">jxnblk.com</a>
+          </div>
         </div>
       </footer>
     </div>

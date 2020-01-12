@@ -173,13 +173,14 @@ export const Project = props => (
            sx={{
              width: [
                "calc(100% - 16px)",
+               "calc(80% - 16px)",
                "calc(50% - 16px)",
                "calc(33.3% - 16px)"
              ],
              margin: "8px",
              minWidth: "340px",
              maxWidth: "450px",
-             textDecoration: 'none'
+             textDecoration: "none"
            }}
            to={props.data.slug}
          >
@@ -213,7 +214,14 @@ export const Project = props => (
                  &#8599;
                </span>
              </div>
-             <div sx={{ marginTop: "10px", fontSize: "14px", color: 'cardText', fontWeight: 500 }}>
+             <div
+               sx={{
+                 marginTop: "10px",
+                 fontSize: "14px",
+                 color: "cardText",
+                 fontWeight: 500
+               }}
+             >
                {props.data.description}
              </div>
            </div>
