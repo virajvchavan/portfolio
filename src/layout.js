@@ -229,7 +229,15 @@ export default props => {
           </Styled.a>
           <div sx={{ mx: "auto" }} />
           <div sx={{ my: 2 }}>
-            Theme inspired from: <a className="activeLink" href="http://jxnblk.com" target="_blank">jxnblk.com</a>
+            Theme inspired from:{" "}
+            <a
+              className="activeLink"
+              href="http://jxnblk.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              jxnblk.com
+            </a>
           </div>
         </div>
       </footer>

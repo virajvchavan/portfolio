@@ -123,7 +123,7 @@ export default {
     },
     h2: {
       variant: 'type.heading',
-      fontSize: [4, 5],
+      fontSize: [3, 4],
     },
     h3: {
       variant: 'type.heading',
