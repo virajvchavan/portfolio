@@ -15,24 +15,29 @@ const Page = props => {
   return (
     <>
       <Helmet>
+        <link rel="canonical" href={props.location.href} />
         <link
-          rel='canonical'
-          href={props.location.href}
+          rel="icon"
+          type="image/png"
+          href="https://virajc.tech/avatar.png"
         />
-        <meta name='twitter:site' content='@viraVChavan' />
+        <link
+          rel="apple-touch-icon-precomposed"
+          href="https://virajc.tech/avatar.png"
+        />
+        <meta name="twitter:site" content="@viraVChavan" />
         <title>{title}</title>
-        <meta name='og:title' content={title} />
-        <meta name='og:description' content={description} />
-        <meta name='twitter:title' content={title} />
-        <meta name='twitter:description' content={description} />
-        <meta name='twitter:creator' content='Viraj Chavan' />
-        <meta name='twitter:card' content='summary' />
+        <meta name="og:title" content={title} />
+        <meta name="og:description" content={description} />
+        <meta name="og:image" content="https://virajc.tech/avatar.png" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:creator" content="Viraj Chavan" />
+        <meta name="twitter:card" content="summary" />
       </Helmet>
-      <Layout {...props}>
-        {props.children}
-      </Layout>
+      <Layout {...props}>{props.children}</Layout>
     </>
-  )
+  );
 }
 
 export const wrapPageElement = ({ element, props }) =>
