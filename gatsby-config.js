@@ -41,6 +41,7 @@ module.exports = {
       options: {
         shortname: `virajc`
       }
-    }
+    },
+    'gatsby-plugin-sitemap',
   ]
 };
