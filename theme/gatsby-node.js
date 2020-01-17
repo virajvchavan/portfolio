@@ -69,6 +69,9 @@ exports.sourceNodes = ({ actions, schema }) => {
         html: {
           type: 'String!',
           resolve: mdxResolverPassthrough('html'),
+        },
+        image_url: {
+          type: 'String!',
         }
       },
       interfaces: ['Node'],
@@ -144,6 +147,7 @@ exports.onCreateNode = ({
     const draft = get(node, 'frontmatter.draft', false)
     const tags = get(node, 'frontmatter.tags', [])
     const importance = get(node, 'frontmatter.importance', 5)
+    const image_url = get(node, 'frontmatter.image_url', '')
 
     actions.createNode({
       slug,
@@ -152,6 +156,7 @@ exports.onCreateNode = ({
       draft,
       importance,
       tags,
+      image_url,
       id: createNodeId(`${node.id} >>> Post`),
       parent: node.id,
       children: [],

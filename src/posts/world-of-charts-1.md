@@ -4,6 +4,7 @@ date: 2020-01-15
 importance: 8
 tags: ['javascript', 'front-end development', 'web development', 'charts']
 excerpt: 'The best way to make sense of lots of data is through visualizations. In web, we have a ton of libraries to help us build a dynamic chart.'
+image_url: '/charts-1.jpeg'
 ---
 
 The best way to make sense of lots of data is through visualizations. Want to know how the stock price of Facebook has changed over the past 1 year? Why spend time looking at the numbers when there’s a <a href="https://www.smartdraw.com/line-graph/" target="_blank">line chart</a> to look at!

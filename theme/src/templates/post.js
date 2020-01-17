@@ -26,6 +26,7 @@ export const query = graphql`
       tags
       draft
       excerpt
+      image_url
     }
   }
 `
