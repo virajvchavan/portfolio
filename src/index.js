@@ -6,7 +6,7 @@ import Layout from './layout'
 const Page = props => {
   let title = 'Viraj C'
   const postTitle = get(props.data, 'post.title')
-  const description = get(props.data, 'post.excerpt')
+  let description = get(props.data, 'post.excerpt')
   let image_url = get(props.data, 'post.image_url')
   const avatar = 'https://virajc.tech/avatar.png'
 
@@ -18,6 +18,10 @@ const Page = props => {
     image_url = 'https://virajc.tech' + image_url;
   } else {
     image_url = avatar;
+  }
+
+  if(!description) {
+    description = "I'm a full-stack software engineer with over 2 years of experience. I know Ruby on Rails, React and more. I love building and shipping things people will actually use and enjoy thinking about the user and their perspective as well as the technical solution."
   }
 
   return (

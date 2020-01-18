@@ -94,7 +94,7 @@ export const List = props =>
   </div>
 
 export const Skill = props =>
-  <span
+  <div
     sx={{
       color: 'background',
       backgroundColor: 'cardBg',
@@ -107,7 +107,7 @@ export const Skill = props =>
       ...props.sx
     }}>
       {props.children}
-  </span>
+  </div>
 
 export const SimpleLink = props =>
   <span
