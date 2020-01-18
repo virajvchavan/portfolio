@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import { Global } from '@emotion/core'
 import "./layout.css"
 import { SocialLinks } from './blocks'
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 const modes = [
   'light',
@@ -68,6 +69,7 @@ export default props => {
     const i = modes.indexOf(mode)
     const n = (i + 1) % modes.length
     setMode(modes[n])
+    trackCustomEvent({ category: "colorModeBtn", action: "Click" });
   }
 
   return (
