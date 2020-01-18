@@ -2,6 +2,7 @@
 import { jsx } from 'theme-ui'
 import React from 'react'
 import {SimpleLink, SocialLinks } from '../blocks'
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 class Modal extends React.Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class Modal extends React.Component {
 
   openModal = () => {
     this.setState({showModal: true});
+    trackCustomEvent({ category: "hireMeBtn", action: "Click"});
   }
 
   closeModal = () => {
@@ -81,7 +83,12 @@ class Modal extends React.Component {
             I'm actively exploring new job opportunities as a <span sx={{ color: 'highlight' }}>full stack/backend</span> software developer. I would love to work in a <span sx={{ color: 'highlight' }}>remote-first</span> company.<br/><br/>
             I have used <span sx={{ color: 'highlight' }}>Ruby on Rails, JavaScript, React</span> to build apps before. But I'll be quick and excited to learn new technologies. <br/><br/>
 
-            <a href='/resume.pdf' download="Viraj Chavan Resume" sx={{fontSize: '13px', textDecoration: 'underline !important'}} >
+            <a href='/resume.pdf'
+              download="Viraj Chavan Resume"
+              sx={{fontSize: '13px', textDecoration: 'underline !important'}}
+              onClick={e => {
+                trackCustomEvent({ category: "resumeDownloadBtn", action: "Click" });
+              }} >
               Here's my resume.
             </a> &nbsp;
             <span sx={{ fontSize: '13px'}}>Also take a look around this site to get more insights.</span>
