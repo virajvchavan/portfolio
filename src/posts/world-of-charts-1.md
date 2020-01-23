@@ -28,7 +28,7 @@ Although rarely used, we sometimes may need to generate our charts on the server
 
 A common use case for this is when we want to show some charts in the dynamic emails we send to users through the back-end. Since JavaScript execution is not allowed in the HTML emails, we can generate image files for the charts and render them in emails. (Other use-cases might include creating embedded charts in PDF files, attaching images in emails etc)
 
-There are limited libraries available for server-side chart generation. Different libraries are available for most server-side languages. Separate services like <a href="https://www.image-charts.com/" target="_blank">image charts</a> also exist, which give you a <a href="https://restfulapi.net/" target="_blank">REST API</a> to use.
+There are limited libraries available for server-side chart generation. Different libraries are available for most server-side languages. Separate services like <a href="https://www.image-charts.com/" target="_blank">image charts</a> and <a href="https://quickchart.io/" target="_blank">quickchart.io</a> also exist, which give you a <a href="https://restfulapi.net/" target="_blank">REST API</a> to use.
 
 If you can’t find a server-side library that fits your needs, as a workaround, you can write a script on your server that uses one of the client-side libraries to create the chart in HTML. Then you can convert the html to PDF or an image file on the server.
 
@@ -67,7 +67,7 @@ When to use which: SVG v/s Canvas
 
 Here’s an in-depth discussion on the pros and cons of both: <a href="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/samples/gg193983(v=vs.85)#html5-graphic-technologies" target="_blank">SVG vs canvas: how to choose</a>. You don’t need to know this to use any of the libraries, but it’s always good to know how it works underneath in an abstract way.
 
-In Part 2, we discuss popular client-side JavaScript data-visualization libraries.
+In <a href="/blog/world-of-charts-2/">Part 2</a>, we discuss popular client-side JavaScript data-visualization libraries.
 
 Thanks for reading! Find me at <a href="https://virajc.tech" target="_blank">virajc.tech</a>.
 
