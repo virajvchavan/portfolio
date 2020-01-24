@@ -21,7 +21,7 @@ D3.js
 
 <a href="https://d3js.org/" target="_blank">D3</a> is probably the most flexible and powerful data visualization JS library ever! It allows great control over the final visual result. It’s also probably the most difficult to get started with.
 
-<img src="/charts2/d3.png" />
+<img src="/charts2/d3.jpg" />
 
 D3 allows us to programmatically create SVG objects, style them, and add transitions, dynamic effect. One needs to spend quiet some time learning its concepts before being productive in it. There’s a <a href="https://www.udacity.com/course/data-visualization-and-d3js--ud507" target="_blank">course</a> on Udacity that teaches D3Js.
 
@@ -66,7 +66,7 @@ HighCharts
 
 <a href="https://www.highcharts.com/" target="_blank">HighCharts</a> is a popular premium library for creating customizable, interactive charts of any complexity. It is free for personal/non-commercial use, but you’ll need to buy a license for any commercial use.
 
-<img src="/charts2/highcharts.png" />
+<img src="/charts2/highcharts.jpg" />
 
 It uses SVG and fallbacks to VML for backward compatibility all the way to IE6/IE8.
 
@@ -90,7 +90,7 @@ Fusion Charts
 
 <a href="https://www.fusioncharts.com/" target="_blank">Fusion Charts</a> offers a wide variety of charts out of the box. It has over <a href="https://www.fusioncharts.com/dev/chart-guide/list-of-charts" target="_blank">95+ types</a> of charts to work with. You’ll need to buy a license to use their library.
 
-<img src="/charts2/fusioncharts.png" />
+<img src="/charts2/fusioncharts.jpg" />
 
 It offers great documentation, support for plugins, smart defaults, exportable charts, UX elements for interactivity, browser compatibility and more.
 
@@ -103,7 +103,7 @@ Google Charts
 
 <a href="https://developers.google.com/chart" target="_blank">Google Charts</a> are powerful, free and simple to use. Developers can create the most basic charts using Google Charts. It uses SVGs to render charts in the browser.
 
-<img src="/charts2/google-charts.jpeg" />
+<img src="/charts2/google-charts.jpg" />
 
 
 Although suitable for most requirements, it does not offer as extensive set of features as its paid counterparts such as HighCharts. Google Charts have reasonable defaults, but can also be customized in countless ways
