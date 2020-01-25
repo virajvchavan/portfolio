@@ -13,7 +13,7 @@ export default () => (
                 fields: [importance, date],
                 order: DESC
             }
-            limit: 4
+            limit: 6
             filter: {
                 draft: { ne: true }
             }
