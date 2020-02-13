@@ -7,6 +7,7 @@ module.exports = {
           .filter(post => !post.draft)
           .map(post => ({
             ...post.frontmatter,
+            title: post.title,
             description: post.excerpt,
             url: site.siteMetadata.siteUrl + post.slug,
             guid: site.siteMetadata.siteUrl + post.slug,
