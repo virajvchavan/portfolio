@@ -4,7 +4,8 @@ import { jsx } from 'theme-ui'
 import {
   FaTwitter as Twitter,
   FaGithub as GitHub,
-  FaLinkedin as Linkedin
+  FaLinkedin as Linkedin,
+  FaDev as DevTo
 } from 'react-icons/fa'
 import { Link } from "gatsby";
 
@@ -165,6 +166,17 @@ export const SocialLinks = props =>
         mx: 2
       }}>
       <Linkedin size={24} />
+    </a>
+    <a
+      href="https://dev.to/virajvchavan"
+      title="Dev.to"
+      target="_blank"
+      rel="noopener noreferrer"
+      sx={{
+        variant: 'styles.navitem',
+        mx: 2
+      }}>
+        <DevTo size={24} />
     </a>
   </div>
 
