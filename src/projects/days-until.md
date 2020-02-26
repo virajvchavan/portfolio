@@ -8,7 +8,7 @@ end_date: ""
 tags: ['javascript', 'html', 'css']
 ---
 
-### Days Until (Chrome Extension)
+# Days Until (Chrome Extension)
 
 <a class="project_linkouts" href="https://github.com/virajvchavan/daysCount/tree/master/daysUntil" target="_blank">Github</a>
 <a class="project_linkouts" href="https://chrome.google.com/webstore/detail/days-until-days-countdown/eddnhnjblfligfijgckclhnkmilmdhij" target="_blank">Download</a>

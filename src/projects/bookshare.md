@@ -8,7 +8,7 @@ end_date: ""
 tags: ['php', 'mysql', 'javascript', 'html', 'css']
 ---
 
-### Bookshare
+# Bookshare
 
 <a href="https://github.com/virajvchavan/bookshare" class="project_linkouts" target='_blank'>Github</a>
 

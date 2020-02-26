@@ -8,7 +8,7 @@ end_date: ""
 tags: ['javascript', 'reactjs', 'nodejs', 'php', 'html', 'css']
 ---
 
-### Frontend for Apps at Media.net
+# Frontend for Apps at Media.net
 
 This is at my current job at <a href='https://media.net' target="_blank">Media.net</a>.
 I'm part of the front-end team building web apps having more than a million impressions a day.

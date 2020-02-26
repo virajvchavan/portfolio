@@ -8,7 +8,7 @@ end_date: ""
 tags: ['php', 'mysql', 'javascript', 'html', 'css']
 ---
 
-### Game of Shares
+# Game of Shares
 
 <a href="https://github.com/virajvchavan/Game-of-Shares" class="project_linkouts" target='_blank'>Github</a>
 

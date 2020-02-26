@@ -8,7 +8,7 @@ end_date: ""
 tags: ['reacts', 'gatsby', 'nodejs', 'javascript', 'html', 'css']
 ---
 
-### Personal blog (This website)
+# Personal blog (This website)
 
 <a href="https://github.com/virajvchavan/portfolio" class="project_linkouts" target='_blank'>Github</a>
 
