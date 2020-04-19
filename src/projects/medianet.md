@@ -1,5 +1,5 @@
 ---
-title: 'Frontend for Apps at Media.net'
+title: 'Apps at Media.net'
 url: '#'
 index: 2
 description: "Part of the front-end team building web apps having more than a million impressions a day."
@@ -8,16 +8,16 @@ end_date: ""
 tags: ['javascript', 'reactjs', 'nodejs', 'php', 'html', 'css']
 ---
 
-# Frontend for Apps at Media.net
+# Apps at Media.net
 
 This is at my current job at <a href='https://media.net' target="_blank">Media.net</a>.
-I'm part of the front-end team building web apps having more than a million impressions a day.
+I'm part of the team building web apps having more than a million impressions a day.
 
-The project has a large team consisting several small sub-teams having different responsibilities. I am part of the 3 people sub-team that handle the front-end and making things configurable on the back-end.
+The project has a large team consisting several small sub-teams having different responsibilities.
 
-While most of the front-end was written in Vanilla JS with a few essential libraries, I got to write new parts of the app in **ReactJs**. Also modified related functionality on their server, which involved getting to know some part of the backend codebase written in PHP.
-
-I also got introduced to **nodejs** and how it can be used to create server-side software.
+My role in the team has been more on the front-end, with occasional changes/feature implementations on the backend.
+On the front-end, I got to implement complex interactive **data-intensive UIs** in **ReactJs**.
+On the back-end, I got introduced to **nodejs** and learned to use it to create services on the server-side. Also learned some PHP to make changes to some old code. **MySQL** as a the primary database with several Redis instances for the caching layer.
 
 The scale in terms of number of users and code helped me understand the challenges involved in building **large complex systems**. I understood how efficient **caching** at different places can speed up our systems.
 
