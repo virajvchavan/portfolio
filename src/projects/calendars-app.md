@@ -24,6 +24,7 @@ Deployed here: https://calendars-vc.herokuapp.com/
 classified by calendar names
 - When a user connects the Google account, all the calendars and events are imported to the App.
 - The subsequent events which get created/updated/deleted are sync'd to the app automatically
+- Using the Google Calendar APIs directly rather than using the gem like `google-api-client` would be preferred.
 
 ## Implementation Details
 - Ruby on Rails app with PostreSQL as database
