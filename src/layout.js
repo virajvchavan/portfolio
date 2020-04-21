@@ -189,6 +189,10 @@ export default props => {
           >
             Viraj C
           </Styled.a>
+          <a sx={{
+              variant: "styles.navitem",
+              mr: 3
+            }} href="/resume.pdf" target="_blank" as={Link}>Resume</a>
           <Styled.a
             as={Link}
             to="/blog/"
