@@ -81,7 +81,7 @@ class Modal extends React.Component {
               }} onClick={this.closeModal} role='button' tabIndex='-1'>close</span>
             Hi! <br /> <br />
             I'm actively exploring new job opportunities as a <span sx={{ color: 'highlight' }}>full stack/backend</span> software developer. I would love to work in a <span sx={{ color: 'highlight' }}>remote-first</span> company.<br/><br/>
-            I have used <span sx={{ color: 'highlight' }}>Ruby on Rails, JavaScript, React</span> to build apps before. I'm quick to learn new technologies when I need them. <br/><br/>
+            I have used <span sx={{ color: 'highlight' }}>Ruby on Rails, NodeJs, JavaScript, React</span> to build apps before. I'm quick to learn new technologies when I need them. <br/><br/>
 
             <a href='/resume.pdf'
               download="Viraj Chavan Resume"
