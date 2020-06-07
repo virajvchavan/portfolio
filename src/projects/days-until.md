@@ -12,7 +12,10 @@ tags: ['javascript', 'html', 'css']
 
 <a class="project_linkouts" href="https://github.com/virajvchavan/daysCount/tree/master/daysUntil" target="_blank">Github</a>
 <a class="project_linkouts" href="https://chrome.google.com/webstore/detail/days-until-days-countdown/eddnhnjblfligfijgckclhnkmilmdhij" target="_blank">Download</a>
-<a class="project_linkouts" href="https://www.producthunt.com/posts/days-until-chrome-extension" target="_blank">ProductHunt</a>
+
+<br />
+<br />
+<a href="https://www.producthunt.com/posts/days-until-chrome-extension?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-days-until-chrome-extension" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=164166&theme=light" alt="Days Until (Chrome Extension) - A days countdown ALWAYS in front of your eyes | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
 
 I built this small Chrome extension in 2-3 hours because I wanted this functionality and there was no existing extension that did what I want.
 
