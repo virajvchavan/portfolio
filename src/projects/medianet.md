@@ -11,13 +11,16 @@ tags: ['javascript', 'reactjs', 'nodejs', 'php', 'html', 'css']
 # Apps at Media.net
 
 This is at my current job at <a href='https://media.net' target="_blank">Media.net</a>.
-I'm part of the team building web apps having more than a million impressions a day.
+I'm part of the team building web applications having more than a million impressions a day.
 
 The project has a large team consisting several small sub-teams having different responsibilities.
 
-My role in the team has been more on the front-end, with occasional changes/feature implementations on the backend.
-On the front-end, I got to implement complex interactive **data-intensive UIs** in **ReactJs**.
-On the back-end, I got introduced to **nodejs** and learned to use it to create services on the server-side. Also learned some PHP to make changes to some old code. **MySQL** as a the primary database with several Redis instances for the caching layer.
+These were some of the things I did at Media.net so far:
+- Designed, developed, and maintained features for an application distribution platform. (Tech: JavaScript, NodeJS, PHP, Java, MySQL)
+- Built front-end web applications having more than a million impressions a day.
+- Created data-rich interactive user interfaces using ReactJs.
+- Built an employee data management system using NodeJs, MongoDB, GraphQL & React for 1.3k+ employees.
+- Added features to an existing PHP back-end.
 
 The scale in terms of number of users and code helped me understand the challenges involved in building **large complex systems**. I understood how efficient **caching** at different places can speed up our systems.
 
