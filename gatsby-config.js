@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Viraj C | Software Engineer",
+    title: "Viraj C | Full Stack Software Engineer with Product Mindset",
     description: "Viraj Chavan",
     siteUrl: "https://virajc.tech"
   },

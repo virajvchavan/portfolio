@@ -4,7 +4,7 @@ import get from 'lodash.get'
 import Layout from './layout'
 
 const Page = props => {
-  let title = 'Viraj C'
+  let title = 'Viraj Chavan | Full Stack Software Engineer with Product Mindset'
   const postTitle = get(props.data, 'post.title')
   let description = get(props.data, 'post.excerpt')
   let image_url = get(props.data, 'post.image_url')
@@ -21,7 +21,7 @@ const Page = props => {
   }
 
   if(!description) {
-    description = "I'm a full-stack software engineer with over 2 years of experience. I know Ruby on Rails, React and more. I love building and shipping things people will actually use and enjoy thinking about the user and their perspective as well as the technical solution."
+    description = "A full-stack software engineer with around 3 years of experience. Skilled in NodeJs, Ruby on Rails, ReactJs, MySQL, MongoDB and more. I love building and shipping things people will actually use and enjoy thinking about the user and their perspective as well as the technical solution."
   }
 
   return (
