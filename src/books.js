@@ -52,6 +52,21 @@ export default () => {
         title: "Connect the Dots",
         date: "Aug 2019",
         url: "https://www.amazon.in/Connect-Dots-Rashmi-Bansal/dp/9381626707"
+      },
+      {
+        title: "समिधा - साधना आमटे",
+        date: "",
+        url: "https://www.goodreads.com/book/show/8532416-samidha"
+      },
+      {
+        title: "Sapiens: A Brief History of Humankind",
+        date: "June 2021",
+        url: "https://www.goodreads.com/book/show/23692271-sapiens"
+      },
+      {
+        title: "Hooked: How to Build Habit-Forming Products",
+        date: "August 2021",
+        url: "https://www.goodreads.com/book/show/22668729-hooked"
       }
     ];
 
