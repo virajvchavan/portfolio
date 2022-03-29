@@ -24,7 +24,7 @@ There's nothing technologically difficult or interesting in this project. Anyone
 What's interesting is after I published it on the Chrome Web Store, it grew to 3000+ active users organically. The only place I had publicized it was on ProductHunt.
 
 Here are some stats (at the time of writing this, Jan 2020):
-- 3000+ weekly active users
+- 10,000+ weekly active users
 - High Chrome Webstore ranking for multiple related keywords
 - Growing at 50+ new users per week
 - 54% + users are from the USA, 12% + from Australia
