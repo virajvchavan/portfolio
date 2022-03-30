@@ -67,6 +67,16 @@ export default () => {
         title: "Hooked: How to Build Habit-Forming Products",
         date: "August 2021",
         url: "https://www.goodreads.com/book/show/22668729-hooked"
+      },
+      {
+        title: "Zero To One - Peter Thiel",
+        date: "January 2022",
+        url: "https://www.goodreads.com/book/show/18050143-zero-to-one"
+      },
+      {
+        title: "Raavan: Enemy of Aryavarta",
+        date: "March 2022",
+        url: "https://www.goodreads.com/book/show/35286872-raavan"
       }
     ];
 

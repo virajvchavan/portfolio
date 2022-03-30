@@ -1,7 +1,7 @@
 ---
 title: 'Apps at Media.net'
 url: '#'
-index: 2
+index: 4
 description: "Built several products and systems as a Web Application Developer at Media.net."
 start_date: "2019-02-25"
 end_date: ""
@@ -10,8 +10,7 @@ tags: ['javascript', 'reactjs', 'nodejs', 'php', 'html', 'css']
 
 # Apps at Media.net
 
-This is at my current job at <a href='https://media.net' target="_blank">Media.net</a>.
-I'm part of the team building web applications having more than a million impressions a day.
+I was part of the team building web applications having more than a million impressions a day.
 
 The project has a large team consisting several small sub-teams having different responsibilities.
 
