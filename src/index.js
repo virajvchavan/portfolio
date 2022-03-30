@@ -21,7 +21,7 @@ const Page = props => {
   }
 
   if(!description) {
-    description = "A full-stack software engineer with around 3 years of experience. Skilled in NodeJs, Ruby on Rails, ReactJs, MySQL, MongoDB and more. I love building and shipping things people will actually use and enjoy thinking about the user and their perspective as well as the technical solution."
+    description = "A full-stack software engineer with around 3 years of experience. Skilled in NodeJs, Ruby on Rails, ReactJs, TypeScript, MySQL, MongoDB and more. I love building and shipping things people will actually use and enjoy thinking about the user and their perspective as well as the technical solution."
   }
 
   return (
