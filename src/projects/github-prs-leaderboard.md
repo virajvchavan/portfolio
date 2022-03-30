@@ -1,7 +1,7 @@
 ---
-title: Github PRs Leaderboard'
+title: 'Github PRs Leaderboard'
 url: '#'
-index: 2
+index: 5
 description: "An API that ranks contributors for a Github repository based on the number of merged pull requests."
 start_date: "2020-06-07"
 end_date: ""

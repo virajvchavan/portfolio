@@ -1,5 +1,5 @@
 ---
-title: Luce at SVI'
+title: 'Luce at SVI'
 url: '#'
 index: 2
 description: "Built backend for the service which lets people book cleaning services, and manages the on-demand assignment of jobs to employees.."
