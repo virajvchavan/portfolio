@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@theme-ui/prism": "^0.2.50",
-    "gatsby": "^2.18.8",
+    "gatsby": "^2.32.13",
     "gatsby-cli": "^2.11.13",
     "gatsby-plugin-catch-links": "^2.1.19",
     "gatsby-plugin-disqus": "^1.1.4",
