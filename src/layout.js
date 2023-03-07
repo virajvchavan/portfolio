@@ -127,7 +127,7 @@ export default props => {
         </Styled.a>
         <Styled.a
           as={Link}
-          to="/project/quickinsure/"
+          to="/projects"
           sx={{
             variant: "styles.navitem",
             mr: 3
@@ -215,7 +215,7 @@ export default props => {
           </Styled.a>
           <Styled.a
             as={Link}
-            to="/project/quickinsure/"
+            to="/projects/"
             sx={{
               variant: "styles.navitem",
               mr: 3
