@@ -77,6 +77,11 @@ export default () => {
         title: "Raavan: Enemy of Aryavarta",
         date: "March 2022",
         url: "https://www.goodreads.com/book/show/35286872-raavan"
+      },
+      {
+        title: "21 Lessons for the 21st Century",
+        date: "Jan 2023",
+        url: "https://www.goodreads.com/book/show/38820046-21-lessons-for-the-21st-century?from_search=true&from_srp=true&qid=eTqTTNPdVD&rank=1"
       }
     ];
 
