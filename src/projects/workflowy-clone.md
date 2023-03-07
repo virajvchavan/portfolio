@@ -1,7 +1,7 @@
 ---
 title: 'Workflowy Clone'
 url: '#'
-index: 3
+index: 6
 description: "Built a web app with the ability to take notes as infinite, collapsable bullet points, synced to the cloud in real time."
 start_date: "2020-12-25"
 end_date: ""

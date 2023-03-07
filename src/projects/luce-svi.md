@@ -1,11 +1,11 @@
 ---
 title: 'Luce at SVI'
 url: '#'
-index: 2
+index: 3
 description: "Built backend for the service which lets people book cleaning services, and manages the on-demand assignment of jobs to employees.."
 start_date: "2021-04-05"
 end_date: ""
-tags: ['workflowy', 'javascript', 'reactjs', 'nodejs', 'ruby', 'html', 'css']
+tags: ['rails', 'javascript', 'reactjs', 'nodejs', 'ruby']
 ---
 
 # Luce at SVI

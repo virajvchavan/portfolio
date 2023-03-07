@@ -1,7 +1,7 @@
 ---
 title: 'Calendars App'
 url: 'https://calendars-vc.herokuapp.com/'
-index: 7
+index: 12
 description: "A Ruby on Rails app that syncs all your Google calendar events and presents them in a simple UI"
 start_date: "2020-03-20"
 end_date: ""
