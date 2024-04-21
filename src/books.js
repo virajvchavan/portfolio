@@ -82,6 +82,18 @@ export default () => {
         title: "21 Lessons for the 21st Century",
         date: "Jan 2023",
         url: "https://www.goodreads.com/book/show/38820046-21-lessons-for-the-21st-century?from_search=true&from_srp=true&qid=eTqTTNPdVD&rank=1"
+      },
+      {
+        title: 'श्रीमान योगी by Ranjit Desai',
+        url: 'https://www.goodreads.com/en/book/show/6727757'
+      },
+      {
+        title: 'Shivaji: The Grand Rebel by Dennis Kincaid',
+        url: 'https://www.goodreads.com/book/show/28230236-shivaji'
+      },
+      {
+        title: 'Dune - Frank Herbert',
+        url: 'https://www.goodreads.com/book/show/44767458-dune'
       }
     ];
 
@@ -94,7 +106,7 @@ export default () => {
               target={book.url ? "_blank" : ''}
               style={{ color: "unset", textDecoration: "none" }}
             >
-        {book.title} <span style={{fontSize: '13px', color: 'grey'}}>{book.date ? '- ' + book.date : ''}</span>
+        {book.title}
             </a>
           </li>
         ))}
